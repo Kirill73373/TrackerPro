@@ -1,0 +1,24 @@
+PODS:
+  - LGSideMenuController (3.1.2)
+  - lottie-ios (4.1.1)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - LGSideMenuController
+  - lottie-ios
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - LGSideMenuController
+    - lottie-ios
+    - SnapKit
+
+SPEC CHECKSUMS:
+  LGSideMenuController: 0c7b155b0dbdf14bf8b88d5ac363c5fe1584bb23
+  lottie-ios: efa7224964a14f690efc7d3996e7dfebdcd3b499
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 8fc4f2b56b4cbe85008519fdc31c0e92e405bb90
+
+COCOAPODS: 1.11.3
