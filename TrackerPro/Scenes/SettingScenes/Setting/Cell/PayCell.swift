@@ -10,11 +10,21 @@ import Lottie
 
 final class PayCell: UICollectionViewCell {
     
-    private let containerView: UIView = {
+    private let containerOneView: UIView = {
         let vw = UIView()
-        vw.backgroundColor = ColorHelper.greenColor.withAlphaComponent(0.2)
-        vw.cornerType(type: .all, radius: 10)
-        vw.appendShadow(color: ColorHelper.greenColor, opacity: 1, radius: 6, offset: CGSize(width: 0, height: 0))
+        vw.backgroundColor = ColorHelper.bgColor
+        vw.cornerType(type: .all, radius: 5)
+        vw.appendShadow(color: UIColor(red: 1, green: 1, blue: 1, alpha: 1), opacity: 1, radius: 5, offset: CGSize(width: -4, height: -2))
+        vw.clipsToBounds = false
+        return vw
+    }()
+    
+    private let containerTwoView: UIView = {
+        let vw = UIView()
+        vw.backgroundColor = ColorHelper.bgColor
+        vw.cornerType(type: .all, radius: 5)
+        vw.appendShadow(color: UIColor(red: 0.534, green: 0.646, blue: 0.749, alpha: 0.48), opacity: 1, radius: 5, offset: CGSize(width: 4, height: 2))
+        vw.clipsToBounds = false
         return vw
     }()
     
@@ -29,7 +39,7 @@ final class PayCell: UICollectionViewCell {
     
     private let titleMyLabel: UILabel = {
         let lb = UILabel()
-        lb.textColor = ColorHelper.whiteColor
+        lb.textColor = ColorHelper.greenColor
         lb.font = .systemFont(ofSize: 15, weight: .regular)
         lb.text = "ПОВЫСИТЬ УРОВЕНЬ"
         return lb
@@ -37,7 +47,7 @@ final class PayCell: UICollectionViewCell {
     
     private let proLabel: UILabel = {
         let lb = UILabel()
-        lb.textColor = ColorHelper.whiteColor
+        lb.textColor = ColorHelper.greenColor
         lb.font = .systemFont(ofSize: 20, weight: .regular)
         lb.text = "PRO"
         return lb
@@ -59,16 +69,22 @@ final class PayCell: UICollectionViewCell {
     
     private func addConstraints() {
         contentView.addSubviews(
-            containerView
+            containerOneView,
+            containerTwoView
         )
         
-        containerView.addSubviews(
+        containerTwoView.addSubviews(
             titleMyLabel,
             animationView,
             proLabel
         )
         
-        containerView.snp.makeConstraints { make in
+        containerOneView.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(10)
+            make.top.bottom.equalToSuperview()
+        }
+        
+        containerTwoView.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(10)
             make.top.bottom.equalToSuperview()
         }

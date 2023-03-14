@@ -104,11 +104,11 @@ extension SettingViewController: UICollectionViewDelegate, UICollectionViewDataS
         case .notification:
             print("notification")
         case .review:
-            print("review")
+            ReviewService.review(id: "1560817329")
         case .support:
-            print("support")
+            viewModel.flow?(.showSupport)
         case .appInfo:
-            print("appInfo")
+            viewModel.flow?(.showAppInfo)
         default:
             break
         }

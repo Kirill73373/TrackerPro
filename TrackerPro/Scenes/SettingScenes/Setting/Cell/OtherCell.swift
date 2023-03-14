@@ -9,6 +9,24 @@ import UIKit
 
 final class OtherCell: UICollectionViewCell {
     
+    private let containerOneView: UIView = {
+        let vw = UIView()
+        vw.backgroundColor = ColorHelper.bgColor
+        vw.cornerType(type: .all, radius: 5)
+        vw.appendShadow(color: UIColor(red: 1, green: 1, blue: 1, alpha: 1), opacity: 1, radius: 5, offset: CGSize(width: -4, height: -2))
+        vw.clipsToBounds = false
+        return vw
+    }()
+    
+    private let containerTwoView: UIView = {
+        let vw = UIView()
+        vw.backgroundColor = ColorHelper.bgColor
+        vw.cornerType(type: .all, radius: 5)
+        vw.appendShadow(color: UIColor(red: 0.534, green: 0.646, blue: 0.749, alpha: 0.48), opacity: 1, radius: 5, offset: CGSize(width: 4, height: 2))
+        vw.clipsToBounds = false
+        return vw
+    }()
+    
     private let iconImageView: UIImageView = {
         let img = UIImageView()
         img.contentMode = .scaleAspectFit
@@ -17,22 +35,9 @@ final class OtherCell: UICollectionViewCell {
     
     private let titleMyLabel: UILabel = {
         let lb = UILabel()
-        lb.textColor = ColorHelper.greenColor
+        lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
         lb.font = .systemFont(ofSize: 15, weight: .light)
         return lb
-    }()
-    
-    private let arrowImageView: UIImageView = {
-        let img = UIImageView()
-        img.contentMode = .scaleAspectFit
-        img.image = ImageHelper.arrowIcon.withTintColor(ColorHelper.greenColor)
-        return img
-    }()
-    
-    private let lineView: UIView = {
-        let vw = UIView()
-        vw.backgroundColor = ColorHelper.greenColor.withAlphaComponent(0.25)
-        return vw
     }()
     
     override init(frame: CGRect) {
@@ -46,7 +51,7 @@ final class OtherCell: UICollectionViewCell {
     }
     
     func configure(model: SettingModel) {
-        iconImageView.image = model.image?.withTintColor(ColorHelper.greenColor)
+        iconImageView.image = model.image?.withTintColor(ColorHelper.blackColor.withAlphaComponent(0.4))
         titleMyLabel.text = model.title
     }
     
@@ -56,33 +61,35 @@ final class OtherCell: UICollectionViewCell {
     
     private func addConstraints() {
         contentView.addSubviews(
-            iconImageView,
-            titleMyLabel,
-            arrowImageView,
-            lineView
+            containerOneView,
+            containerTwoView,
+            titleMyLabel
         )
         
-        iconImageView.snp.makeConstraints { make in
+        containerTwoView.addSubviews(
+            iconImageView
+        )
+        
+        containerOneView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.leading.equalToSuperview().inset(10)
+            make.size.equalTo(30)
+        }
+        
+        containerTwoView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.leading.equalToSuperview().inset(10)
+            make.size.equalTo(30)
+        }
+        
+        iconImageView.snp.makeConstraints { make in
+            make.centerY.centerX.equalToSuperview()
             make.size.equalTo(21)
         }
         
         titleMyLabel.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.leading.equalTo(iconImageView.snp.trailing).inset(-15)
-        }
-        
-        arrowImageView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.trailing.equalToSuperview().inset(10)
-            make.size.equalTo(10)
-        }
-        
-        lineView.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview().inset(10)
-            make.bottom.equalToSuperview()
-            make.height.equalTo(0.4)
         }
     }
 }

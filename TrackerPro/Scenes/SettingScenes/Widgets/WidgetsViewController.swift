@@ -22,12 +22,17 @@ final class WidgetsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindUI()
         setupStyleView()
         addConstraints()
     }
     
+    private func bindUI() {
+        
+    }
+    
     private func setupStyleView() {
-        view.backgroundColor = .white
+        view.backgroundColor = ColorHelper.bgColor
         navigationController?.navigationBar.isHidden = true
     }
     

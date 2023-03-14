@@ -29,19 +29,24 @@ enum ImageHelper {
     static var passwordIcon: UIImage = UIImage(named: "passwordIcon") ?? UIImage()
     static var reviewIcon: UIImage = UIImage(named: "reviewIcon") ?? UIImage()
     static var appInfoIcon: UIImage = UIImage(named: "appInfoIcon") ?? UIImage()
-        
-    
     static var commandIcon: UIImage = UIImage(named: "commandIcon") ?? UIImage()
     static var notificationIcon: UIImage = UIImage(named: "notificationIcon") ?? UIImage()
     static var statisticIcon: UIImage = UIImage(named: "statisticIcon") ?? UIImage()
     static var subjectIcon: UIImage = UIImage(named: "subjectIcon") ?? UIImage()
     
+    //MARK: - Support
+    
+    static var instagramIcon: UIImage = UIImage(named: "instagramIcon") ?? UIImage()
+    static var mailIcon: UIImage = UIImage(named: "mailIcon") ?? UIImage()
+    static var telegramIcon: UIImage = UIImage(named: "telegramIcon") ?? UIImage()
+    static var vkIcon: UIImage = UIImage(named: "vkIcon") ?? UIImage()
+    static var whatsAppIcon: UIImage = UIImage(named: "whatsAppIcon") ?? UIImage()
     
     //MARK: - Other
     
     static var backIcon: UIImage = UIImage(named: "backIcon") ?? UIImage()
     static var nextIcon: UIImage = UIImage(named: "nextIcon") ?? UIImage()
-    
+    static var backOtherIcon: UIImage = UIImage(named: "backOtherIcon") ?? UIImage()
     
 }
 

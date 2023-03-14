@@ -13,7 +13,7 @@ final class TitleCell: UICollectionViewCell {
         let lb = UILabel()
         lb.font = .systemFont(ofSize: 40, weight: .regular)
         lb.text = "Настройки"
-        lb.textColor = ColorHelper.greenColor
+        lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
         return lb
     }()
     

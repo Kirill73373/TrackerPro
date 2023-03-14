@@ -11,7 +11,8 @@ import UIKit
 final class SettingViewModel {
     
     enum Flow {
-        case back
+        case showSupport
+        case showAppInfo
     }
     
     var flow: ((Flow) -> Void)?

@@ -104,6 +104,7 @@ final class AppCoordinator: NSObject {
         sideMenuController?.leftViewWidth = viewController.view.frame.width / 1.5
         bindMainVC(viewModel: viewModel)
         navigationController.viewControllers.removeAll()
+        navigationController.interactivePopGestureRecognizer?.isEnabled = true
         navigationController.pushViewController(sideMenuController ?? LGSideMenuController(), animated: false)
     }
     
@@ -130,8 +131,44 @@ final class AppCoordinator: NSObject {
         viewModel.flow = { [weak self] flow in
             guard let self = self else { return }
             switch flow {
+            case .showAppInfo:
+                self.showAppInfoVC()
+            case .showSupport:
+                self.showSupportVC()
+            }
+        }
+    }
+    
+    private func showSupportVC() {
+        let viewModel = SupportViewModel()
+        let viewController = SupportViewController(viewModel: viewModel)
+        bindSupportVC(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func bindSupportVC(viewModel: SupportViewModel) {
+        viewModel.flow = { [weak self] flow in
+            guard let self = self else { return }
+            switch flow {
             case .back:
-                break
+                self.navigationController.popViewController(animated: true)
+            }
+        }
+    }
+    
+    private func showAppInfoVC() {
+        let viewModel = AppInfoViewModel()
+        let viewController = AppInfoViewController(viewModel: viewModel)
+        bindAppInfoVC(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func bindAppInfoVC(viewModel: AppInfoViewModel) {
+        viewModel.flow = { [weak self] flow in
+            guard let self = self else { return }
+            switch flow {
+            case .back:
+                self.navigationController.popViewController(animated: true)
             }
         }
     }
