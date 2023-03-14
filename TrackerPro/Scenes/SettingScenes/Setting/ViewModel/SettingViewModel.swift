@@ -11,6 +11,14 @@ import UIKit
 final class SettingViewModel {
     
     enum Flow {
+        case showExchangeRates
+        case showStatistic
+        case showLanguage
+        case showSubject
+        case showWidgets
+        case showPasscode
+        case showCommands
+        case showNotification
         case showSupport
         case showAppInfo
     }

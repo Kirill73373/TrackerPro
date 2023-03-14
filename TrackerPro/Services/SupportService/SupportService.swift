@@ -41,31 +41,26 @@ final class SupportService: NSObject {
             guard let url = URL(string: type.urlString) else { return }
             UIApplication.shared.open(url)
         } else {
-            sendEmail(mail: type.urlString)
+            sendEmail(mailCopy: type.urlString)
         }
     }
     
-    private func sendEmail(mail: String) {
-        DispatchQueue.main.async {
-            if MFMailComposeViewController.canSendMail() {
-                let mail = MFMailComposeViewController()
-                mail.mailComposeDelegate = self
-                mail.setToRecipients(["\(mail)"])
-                mail.setMessageBody("<p>Опишите вашу проблему</p>", isHTML: true)
-                mail.modalPresentationStyle = .overFullScreen
-                guard let rootViewController = UIApplication.shared.windows.last?.rootViewController else { return }
-                rootViewController.present(mail, animated: true)
-            } else {
-                print("Error show sendEmail")
-            }
+    private func sendEmail(mailCopy: String) {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients([mailCopy])
+            mail.setMessageBody("<p>Опишите вашу проблему</p>", isHTML: true)
+            guard let rootViewController = UIApplication.shared.windows.last?.rootViewController else { return }
+            rootViewController.present(mail, animated: true)
+        } else {
+            print("Error show sendEmail")
         }
     }
 }
 
 extension SupportService: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        DispatchQueue.main.async {
-            controller.dismiss(animated: true)
-        }
+        controller.dismiss(animated: true)
     }
 }

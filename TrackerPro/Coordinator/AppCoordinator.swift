@@ -131,10 +131,77 @@ final class AppCoordinator: NSObject {
         viewModel.flow = { [weak self] flow in
             guard let self = self else { return }
             switch flow {
+            case .showExchangeRates:
+                break
+            case .showStatistic:
+                break
+            case .showLanguage:
+                self.showLanguageVC()
+            case .showSubject:
+                break
+            case .showWidgets:
+                self.showWidgetsVC()
+            case .showPasscode:
+                break
+            case .showCommands:
+                break
+            case .showNotification:
+                self.showNotificationVC()
             case .showAppInfo:
                 self.showAppInfoVC()
             case .showSupport:
                 self.showSupportVC()
+            }
+        }
+    }
+    
+    private func showLanguageVC() {
+        let viewModel = LanguageViewModel()
+        let viewController = LanguageViewController(viewModel: viewModel)
+        bindLanguageVC(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func bindLanguageVC(viewModel: LanguageViewModel) {
+        viewModel.flow = { [weak self] flow in
+            guard let self = self else { return }
+            switch flow {
+            case .back:
+                self.navigationController.popViewController(animated: true)
+            }
+        }
+    }
+    
+    private func showWidgetsVC() {
+        let viewModel = WidgetsViewModel()
+        let viewController = WidgetsViewController(viewModel: viewModel)
+        bindWidgetsVC(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func bindWidgetsVC(viewModel: WidgetsViewModel) {
+        viewModel.flow = { [weak self] flow in
+            guard let self = self else { return }
+            switch flow {
+            case .back:
+                self.navigationController.popViewController(animated: true)
+            }
+        }
+    }
+    
+    private func showNotificationVC() {
+        let viewModel = NotificationViewModel()
+        let viewController = NotificationViewController(viewModel: viewModel)
+        bindNotificationVC(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func bindNotificationVC(viewModel: NotificationViewModel) {
+        viewModel.flow = { [weak self] flow in
+            guard let self = self else { return }
+            switch flow {
+            case .back:
+                self.navigationController.popViewController(animated: true)
             }
         }
     }

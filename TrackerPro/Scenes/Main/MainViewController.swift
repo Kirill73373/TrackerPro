@@ -12,15 +12,6 @@ final class MainViewController: UIViewController {
     
     private let topMainView = TopMainView()
     
-    private let animationView: LottieAnimationView = {
-        let vw = LottieAnimationView(name: "emptyCard")
-        vw.contentMode = .scaleAspectFit
-        vw.loopMode = .loop
-        vw.animationSpeed = 0.5
-        vw.play()
-        return vw
-    }()
-    
     private let viewModel: MainViewModel
     
     init(viewModel: MainViewModel) {
@@ -58,19 +49,13 @@ final class MainViewController: UIViewController {
     
     private func addConstraints() {
         view.addSubviews(
-            topMainView,
-            animationView
+            topMainView
         )
         
-        topMainView.snp.makeConstraints { make in
+        topMainView.snp.remakeConstraints { make in
             make.trailing.leading.equalToSuperview().inset(20)
             make.top.equalToSuperview().inset(50)
-            make.size.equalTo(40)
-        }
-        
-        animationView.snp.makeConstraints { make in
-            make.centerX.centerY.equalToSuperview()
-            make.size.equalTo(CGSize(width: 300, height: 300))
+            make.height.equalTo(40)
         }
     }
 }

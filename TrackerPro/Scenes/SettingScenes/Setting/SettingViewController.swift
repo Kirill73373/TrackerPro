@@ -86,23 +86,23 @@ extension SettingViewController: UICollectionViewDelegate, UICollectionViewDataS
         UIImpactFeedbackGenerator(style: .soft).impactOccurred(intensity: 0.7)
         switch model.lineType {
         case .paywall:
-            print("paywall")
+            break
         case .valute:
-            print("valute")
+            viewModel.flow?(.showExchangeRates)
         case .statistic:
-            print("statistic")
+            viewModel.flow?(.showStatistic)
         case .language:
-            print("language")
+            viewModel.flow?(.showLanguage)
         case .subject:
-            print("subject")
+            viewModel.flow?(.showSubject)
         case .widgets:
-            print("widgets")
+            viewModel.flow?(.showWidgets)
         case .passcode:
-            print("passcode")
+            viewModel.flow?(.showPasscode)
         case .commands:
-            print("commands")
+            viewModel.flow?(.showCommands)
         case .notification:
-            print("notification")
+            viewModel.flow?(.showNotification)
         case .review:
             ReviewService.review(id: "1560817329")
         case .support:
@@ -134,4 +134,3 @@ extension SettingViewController: UICollectionViewDelegate, UICollectionViewDataS
         }
     }
 }
-

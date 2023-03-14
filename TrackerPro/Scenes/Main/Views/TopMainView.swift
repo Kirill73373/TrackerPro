@@ -39,11 +39,16 @@ final class TopMainView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         bindUI()
-        addConstraints()
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        addConstraints()
     }
     
     private func bindUI() {
@@ -64,12 +69,12 @@ final class TopMainView: UIView {
             searchView
         )
         
-        settingView.snp.makeConstraints { make in
+        settingView.snp.remakeConstraints { make in
             make.centerY.leading.equalToSuperview()
             make.size.equalTo(40)
         }
         
-        searchView.snp.makeConstraints { make in
+        searchView.snp.remakeConstraints { make in
             make.centerY.trailing.equalToSuperview()
             make.size.equalTo(40)
         }

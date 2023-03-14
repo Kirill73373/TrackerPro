@@ -13,7 +13,7 @@ final class SupportCell: UICollectionViewCell {
         let vw = UIView()
         vw.backgroundColor = ColorHelper.bgColor
         vw.cornerType(type: .all, radius: 10)
-        vw.appendShadow(color: UIColor(red: 1, green: 1, blue: 1, alpha: 1), opacity: 1, radius: 12, offset: CGSize(width: -4, height: -2))
+        vw.appendShadow(color: UIColor(red: 1, green: 1, blue: 1, alpha: 1), opacity: 1, radius: 8, offset: CGSize(width: -4, height: -2))
         vw.clipsToBounds = false
         return vw
     }()
@@ -22,7 +22,7 @@ final class SupportCell: UICollectionViewCell {
         let vw = UIView()
         vw.backgroundColor = ColorHelper.bgColor
         vw.cornerType(type: .all, radius: 10)
-        vw.appendShadow(color: UIColor(red: 0.534, green: 0.646, blue: 0.749, alpha: 0.48), opacity: 1, radius: 12, offset: CGSize(width: 4, height: 2))
+        vw.appendShadow(color: UIColor(red: 0.534, green: 0.646, blue: 0.749, alpha: 0.48), opacity: 1, radius: 8, offset: CGSize(width: 4, height: 2))
         vw.clipsToBounds = false
         return vw
     }()

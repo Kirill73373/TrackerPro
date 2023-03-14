@@ -9,6 +9,24 @@ import UIKit
 
 final class ChangeAppIconViewController: UIViewController {
     
+    private let backView: CustomButton = {
+        let vw = CustomButton()
+        vw.image = ImageHelper.backOtherIcon.withTintColor(ColorHelper.blackColor.withAlphaComponent(0.4))
+        vw.imageSize = .init(width: 25, height: 25)
+        vw.imagePozitionType = .centerIcon
+        vw.backgroundColor = ColorHelper.buttonColor
+        vw.corner = 10
+        return vw
+    }()
+    
+    private let titleLabel: UILabel = {
+        let lb = UILabel()
+        lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
+        lb.font = .systemFont(ofSize: 25, weight: .light)
+        lb.text = "Смена иконки"
+        return lb
+    }()
+    
     private let viewModel: ChangeAppIconViewModel
     
     init(viewModel: ChangeAppIconViewModel) {
@@ -28,7 +46,10 @@ final class ChangeAppIconViewController: UIViewController {
     }
     
     private func bindUI() {
-        
+        backView.tap = { [weak self] in
+            guard let self = self else { return }
+            self.viewModel.flow?(.back)
+        }
     }
     
     private func setupStyleView() {
@@ -37,8 +58,20 @@ final class ChangeAppIconViewController: UIViewController {
     }
     
     private func addConstraints() {
-       // view.addSubview()
+        view.addSubviews(
+            backView,
+            titleLabel
+        )
         
+        backView.snp.makeConstraints { make in
+            make.leading.equalToSuperview().inset(20)
+            make.top.equalToSuperview().inset(60)
+            make.size.equalTo(40)
+        }
+        
+        titleLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalTo(backView)
+        }
     }
 }
-
