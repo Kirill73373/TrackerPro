@@ -91,6 +91,8 @@
 		BD71A8CF29C0B4EE00E6A86E /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8CE29C0B4EE00E6A86E /* ReviewService.swift */; };
 		BD71A8D229C0B60000E6A86E /* SupportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8D129C0B60000E6A86E /* SupportService.swift */; };
 		BD71A8D529C0BE9700E6A86E /* SupportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8D429C0BE9700E6A86E /* SupportModel.swift */; };
+		BD71A8D829C0F4F400E6A86E /* AnaliticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8D729C0F4F400E6A86E /* AnaliticService.swift */; };
+		BD71A8DB29C0F7C100E6A86E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8DA29C0F7C100E6A86E /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -182,6 +184,8 @@
 		BD71A8CE29C0B4EE00E6A86E /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
 		BD71A8D129C0B60000E6A86E /* SupportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportService.swift; sourceTree = "<group>"; };
 		BD71A8D429C0BE9700E6A86E /* SupportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportModel.swift; sourceTree = "<group>"; };
+		BD71A8D729C0F4F400E6A86E /* AnaliticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticService.swift; sourceTree = "<group>"; };
+		BD71A8DA29C0F7C100E6A86E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -673,6 +677,8 @@
 		BD71A86929BD010D00E6A86E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BD71A8D929C0F7B400E6A86E /* NetworkService */,
+				BD71A8D629C0F4E800E6A86E /* AnaliticService */,
 				BD71A8D029C0B5F500E6A86E /* SupportService */,
 				BD71A8CD29C0B4E100E6A86E /* ReviewService */,
 				BD71A86B29BD013E00E6A86E /* IcloudService */,
@@ -906,6 +912,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BD71A8D629C0F4E800E6A86E /* AnaliticService */ = {
+			isa = PBXGroup;
+			children = (
+				BD71A8D729C0F4F400E6A86E /* AnaliticService.swift */,
+			);
+			path = AnaliticService;
+			sourceTree = "<group>";
+		};
+		BD71A8D929C0F7B400E6A86E /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				BD71A8DA29C0F7C100E6A86E /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1033,8 +1055,10 @@
 				BD71A89329BE35E000E6A86E /* AlertController.swift in Sources */,
 				BD71A8D529C0BE9700E6A86E /* SupportModel.swift in Sources */,
 				BD71A87229BD0BD200E6A86E /* UIView.swift in Sources */,
+				BD71A8DB29C0F7C100E6A86E /* NetworkService.swift in Sources */,
 				BD71A82729BCFA7800E6A86E /* LanguageViewController.swift in Sources */,
 				BD71A86829BD010500E6A86E /* ImageHelper.swift in Sources */,
+				BD71A8D829C0F4F400E6A86E /* AnaliticService.swift in Sources */,
 				BD71A7FA29BCF8A200E6A86E /* OnboardViewController.swift in Sources */,
 				BD71A81229BCF91A00E6A86E /* SupportViewController.swift in Sources */,
 				BD71A8BF29BF5BD500E6A86E /* TitleCell.swift in Sources */,

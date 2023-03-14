@@ -1,24 +1,39 @@
 PODS:
+  - Alamofire (5.6.4)
   - LGSideMenuController (3.1.2)
   - lottie-ios (4.1.1)
   - SnapKit (5.6.0)
+  - YandexMobileMetrica (4.4.0):
+    - YandexMobileMetrica/Static (= 4.4.0)
+  - YandexMobileMetrica/Static (4.4.0):
+    - YandexMobileMetrica/Static/Core (= 4.4.0)
+    - YandexMobileMetrica/Static/Crashes (= 4.4.0)
+  - YandexMobileMetrica/Static/Core (4.4.0)
+  - YandexMobileMetrica/Static/Crashes (4.4.0):
+    - YandexMobileMetrica/Static/Core
 
 DEPENDENCIES:
+  - Alamofire
   - LGSideMenuController
   - lottie-ios
   - SnapKit
+  - YandexMobileMetrica
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - LGSideMenuController
     - lottie-ios
     - SnapKit
+    - YandexMobileMetrica
 
 SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   LGSideMenuController: 0c7b155b0dbdf14bf8b88d5ac363c5fe1584bb23
   lottie-ios: efa7224964a14f690efc7d3996e7dfebdcd3b499
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  YandexMobileMetrica: baf7cea47cb87fc9af963c4f747ce8dd7df3d7c0
 
-PODFILE CHECKSUM: 8fc4f2b56b4cbe85008519fdc31c0e92e405bb90
+PODFILE CHECKSUM: 9873aff442d028b690f6cd8a9eda0a9a486dee04
 
 COCOAPODS: 1.11.3

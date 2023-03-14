@@ -10,5 +10,7 @@ target 'TrackerPro' do
 	pod 'SnapKit'
 	pod 'lottie-ios'
 	pod 'LGSideMenuController'
+	pod 'Alamofire'
+	pod 'YandexMobileMetrica'
 
 end
