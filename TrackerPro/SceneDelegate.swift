@@ -19,7 +19,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = appCoordinator.rootViewController
         window?.makeKeyAndVisible()
         appCoordinator.start()
-        
-        AnaliticService.shared.sendAnalitic()
     }
 }
