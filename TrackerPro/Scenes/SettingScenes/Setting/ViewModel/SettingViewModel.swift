@@ -15,7 +15,7 @@ final class SettingViewModel {
         case showStatistic
         case showLanguage
         case showSubject
-        case showWidgets
+        case showChangeIcon
         case showPasscode
         case showCommands
         case showNotification
@@ -35,7 +35,7 @@ final class SettingViewModel {
         SettingModel(type: .line),
         SettingModel(title: "Язык", image: ImageHelper.languageIcon, type: .other, lineType: .language),
         SettingModel(title: "Тема", image: ImageHelper.subjectIcon, type: .other, lineType: .subject),
-        SettingModel(title: "Виджеты", image: ImageHelper.widgetsIcon, type: .other, lineType: .widgets),
+        SettingModel(title: "Смена иконки", image: ImageHelper.widgetsIcon, type: .other, lineType: .changeIcon),
         SettingModel(type: .line),
         SettingModel(title: "Пароль", image: ImageHelper.passwordIcon, type: .other, lineType: .passcode),
         SettingModel(title: "Команды", image: ImageHelper.commandIcon, type: .other, lineType: .commands),

@@ -95,8 +95,8 @@ extension SettingViewController: UICollectionViewDelegate, UICollectionViewDataS
             viewModel.flow?(.showLanguage)
         case .subject:
             viewModel.flow?(.showSubject)
-        case .widgets:
-            viewModel.flow?(.showWidgets)
+        case .changeIcon:
+            viewModel.flow?(.showChangeIcon)
         case .passcode:
             viewModel.flow?(.showPasscode)
         case .commands:

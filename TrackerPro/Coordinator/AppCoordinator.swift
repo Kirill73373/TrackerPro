@@ -139,8 +139,8 @@ final class AppCoordinator: NSObject {
                 self.showLanguageVC()
             case .showSubject:
                 break
-            case .showWidgets:
-                self.showWidgetsVC()
+            case .showChangeIcon:
+                self.showChangeAppIconVC()
             case .showPasscode:
                 break
             case .showCommands:
@@ -172,14 +172,14 @@ final class AppCoordinator: NSObject {
         }
     }
     
-    private func showWidgetsVC() {
-        let viewModel = WidgetsViewModel()
-        let viewController = WidgetsViewController(viewModel: viewModel)
-        bindWidgetsVC(viewModel: viewModel)
+    private func showChangeAppIconVC() {
+        let viewModel = ChangeAppIconViewModel()
+        let viewController = ChangeAppIconViewController(viewModel: viewModel)
+        bindChangeAppIconVC(viewModel: viewModel)
         navigationController.pushViewController(viewController, animated: true)
     }
     
-    private func bindWidgetsVC(viewModel: WidgetsViewModel) {
+    private func bindChangeAppIconVC(viewModel: ChangeAppIconViewModel) {
         viewModel.flow = { [weak self] flow in
             guard let self = self else { return }
             switch flow {
@@ -243,8 +243,6 @@ final class AppCoordinator: NSObject {
 
 extension AppCoordinator: LGSideMenuDelegate {
     
-    func didTransformRootView(sideMenuController: LGSideMenuController, percentage: CGFloat) {}
-    
     func didTransformLeftView(sideMenuController: LGSideMenuController, percentage: CGFloat) {
         if percentage > 0 {
             UIView.animate(withDuration: 0.3, delay: 0) {
@@ -259,5 +257,6 @@ extension AppCoordinator: LGSideMenuDelegate {
         }
     }
     
+    func didTransformRootView(sideMenuController: LGSideMenuController, percentage: CGFloat) {}
     func didTransformRightView(sideMenuController: LGSideMenuController, percentage: CGFloat) {}
 }

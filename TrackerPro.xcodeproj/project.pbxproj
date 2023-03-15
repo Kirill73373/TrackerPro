@@ -36,14 +36,11 @@
 		BD71A82729BCFA7800E6A86E /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A82629BCFA7800E6A86E /* LanguageViewController.swift */; };
 		BD71A82B29BCFB8700E6A86E /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A82A29BCFB8700E6A86E /* NotificationViewModel.swift */; };
 		BD71A82D29BCFB8F00E6A86E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A82C29BCFB8F00E6A86E /* NotificationViewController.swift */; };
-		BD71A83129BCFBFC00E6A86E /* WidgetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A83029BCFBFC00E6A86E /* WidgetsViewController.swift */; };
-		BD71A83329BCFC0500E6A86E /* WidgetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A83229BCFC0500E6A86E /* WidgetsViewModel.swift */; };
 		BD71A83729BCFC8100E6A86E /* IcloudViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A83629BCFC8100E6A86E /* IcloudViewModel.swift */; };
 		BD71A83929BCFC8800E6A86E /* IcloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A83829BCFC8800E6A86E /* IcloudViewController.swift */; };
 		BD71A84429BCFD2B00E6A86E /* PaywallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84329BCFD2B00E6A86E /* PaywallCell.swift */; };
 		BD71A84629BCFD3700E6A86E /* AdmittanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84529BCFD3700E6A86E /* AdmittanceCell.swift */; };
 		BD71A84829BCFD4100E6A86E /* IcloudCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84729BCFD4100E6A86E /* IcloudCell.swift */; };
-		BD71A84A29BCFD4900E6A86E /* WidgetsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84929BCFD4900E6A86E /* WidgetsCell.swift */; };
 		BD71A84C29BCFD5300E6A86E /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84B29BCFD5300E6A86E /* LanguageCell.swift */; };
 		BD71A84E29BCFD6000E6A86E /* ChangeAppIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84D29BCFD6000E6A86E /* ChangeAppIconCell.swift */; };
 		BD71A85029BCFD6D00E6A86E /* AppColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84F29BCFD6D00E6A86E /* AppColorCell.swift */; };
@@ -97,6 +94,8 @@
 		BD71A8E329C1F7C000E6A86E /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8E229C1F7C000E6A86E /* SwitchView.swift */; };
 		BD71A8E529C1F86400E6A86E /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8E429C1F86400E6A86E /* NotificationModel.swift */; };
 		BD71A8E729C2015200E6A86E /* ReminderFrequencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8E629C2015200E6A86E /* ReminderFrequencyCell.swift */; };
+		BD71A8EA29C21B3600E6A86E /* ChangeAppIconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8E929C21B3600E6A86E /* ChangeAppIconModel.swift */; };
+		BD71A8EC29C21E0000E6A86E /* ChangeIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8EB29C21E0000E6A86E /* ChangeIconService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,14 +132,11 @@
 		BD71A82629BCFA7800E6A86E /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		BD71A82A29BCFB8700E6A86E /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		BD71A82C29BCFB8F00E6A86E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
-		BD71A83029BCFBFC00E6A86E /* WidgetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsViewController.swift; sourceTree = "<group>"; };
-		BD71A83229BCFC0500E6A86E /* WidgetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsViewModel.swift; sourceTree = "<group>"; };
 		BD71A83629BCFC8100E6A86E /* IcloudViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcloudViewModel.swift; sourceTree = "<group>"; };
 		BD71A83829BCFC8800E6A86E /* IcloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcloudViewController.swift; sourceTree = "<group>"; };
 		BD71A84329BCFD2B00E6A86E /* PaywallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallCell.swift; sourceTree = "<group>"; };
 		BD71A84529BCFD3700E6A86E /* AdmittanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmittanceCell.swift; sourceTree = "<group>"; };
 		BD71A84729BCFD4100E6A86E /* IcloudCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcloudCell.swift; sourceTree = "<group>"; };
-		BD71A84929BCFD4900E6A86E /* WidgetsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsCell.swift; sourceTree = "<group>"; };
 		BD71A84B29BCFD5300E6A86E /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
 		BD71A84D29BCFD6000E6A86E /* ChangeAppIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconCell.swift; sourceTree = "<group>"; };
 		BD71A84F29BCFD6D00E6A86E /* AppColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorCell.swift; sourceTree = "<group>"; };
@@ -194,6 +190,8 @@
 		BD71A8E229C1F7C000E6A86E /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		BD71A8E429C1F86400E6A86E /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		BD71A8E629C2015200E6A86E /* ReminderFrequencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFrequencyCell.swift; sourceTree = "<group>"; };
+		BD71A8E929C21B3600E6A86E /* ChangeAppIconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconModel.swift; sourceTree = "<group>"; };
+		BD71A8EB29C21E0000E6A86E /* ChangeIconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeIconService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,6 +453,7 @@
 			children = (
 				BD71A81529BCF93B00E6A86E /* ChangeAppIconViewController.swift */,
 				BD71A83F29BCFCFC00E6A86E /* Cell */,
+				BD71A8E829C21B2500E6A86E /* Model */,
 				BD71A81829BCF95700E6A86E /* ViewModel */,
 			);
 			path = ChangeAppIcon;
@@ -492,7 +491,6 @@
 				BD71A7E829BCF78D00E6A86E /* Setting */,
 				BD71A7ED29BCF7CD00E6A86E /* Paywall */,
 				BD71A83429BCFC6C00E6A86E /* Icloud */,
-				BD71A82E29BCFBE000E6A86E /* Widgets */,
 				BD71A82229BCFA5400E6A86E /* Language */,
 				BD71A81729BCF94700E6A86E /* ChangeAppIcon */,
 				BD71A81B29BCF9C800E6A86E /* AppColor */,
@@ -542,24 +540,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		BD71A82E29BCFBE000E6A86E /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-				BD71A83029BCFBFC00E6A86E /* WidgetsViewController.swift */,
-				BD71A83D29BCFCEC00E6A86E /* Cell */,
-				BD71A82F29BCFBED00E6A86E /* ViewModel */,
-			);
-			path = Widgets;
-			sourceTree = "<group>";
-		};
-		BD71A82F29BCFBED00E6A86E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				BD71A83229BCFC0500E6A86E /* WidgetsViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		BD71A83429BCFC6C00E6A86E /* Icloud */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,14 +579,6 @@
 			isa = PBXGroup;
 			children = (
 				BD71A84729BCFD4100E6A86E /* IcloudCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		BD71A83D29BCFCEC00E6A86E /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				BD71A84929BCFD4900E6A86E /* WidgetsCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -689,6 +661,7 @@
 		BD71A86929BD010D00E6A86E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BD71A8ED29C21E0300E6A86E /* ChangeIconService */,
 				BD71A8D929C0F7B400E6A86E /* NetworkService */,
 				BD71A8D629C0F4E800E6A86E /* AnaliticService */,
 				BD71A8D029C0B5F500E6A86E /* SupportService */,
@@ -964,6 +937,22 @@
 			path = Switch;
 			sourceTree = "<group>";
 		};
+		BD71A8E829C21B2500E6A86E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD71A8E929C21B3600E6A86E /* ChangeAppIconModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD71A8ED29C21E0300E6A86E /* ChangeIconService */ = {
+			isa = PBXGroup;
+			children = (
+				BD71A8EB29C21E0000E6A86E /* ChangeIconService.swift */,
+			);
+			path = ChangeIconService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1103,6 +1092,7 @@
 				BD71A7F629BCF88500E6A86E /* LaunchViewModel.swift in Sources */,
 				BD71A8E329C1F7C000E6A86E /* SwitchView.swift in Sources */,
 				BD71A87029BD0BAE00E6A86E /* Animation.swift in Sources */,
+				BD71A8EC29C21E0000E6A86E /* ChangeIconService.swift in Sources */,
 				BD71A80029BCF8BF00E6A86E /* AuthorizationViewController.swift in Sources */,
 				BD71A80E29BCF90500E6A86E /* PrivacyPoliceViewController.swift in Sources */,
 				BD71A80429BCF8D500E6A86E /* SettingViewModel.swift in Sources */,
@@ -1111,12 +1101,11 @@
 				BD71A8C529BF8F8C00E6A86E /* AppInfoViewController.swift in Sources */,
 				BD71A8AF29BE518C00E6A86E /* MainCell.swift in Sources */,
 				BD71A87429BD106A00E6A86E /* UIColor.swift in Sources */,
-				BD71A84A29BCFD4900E6A86E /* WidgetsCell.swift in Sources */,
 				BD71A88829BD517F00E6A86E /* UICollectionView.swift in Sources */,
 				BD71A8A929BE515A00E6A86E /* MainViewController.swift in Sources */,
 				BD71A87D29BD156F00E6A86E /* NotificationService.swift in Sources */,
 				BD71A80C29BCF8FB00E6A86E /* TermsOfUseViewModel.swift in Sources */,
-				BD71A83129BCFBFC00E6A86E /* WidgetsViewController.swift in Sources */,
+				BD71A8EA29C21B3600E6A86E /* ChangeAppIconModel.swift in Sources */,
 				BD71A85229BCFD7A00E6A86E /* PrivacyPoliceCell.swift in Sources */,
 				BD71A85D29BCFDCC00E6A86E /* OnboardCell.swift in Sources */,
 				BD71A87729BD155F00E6A86E /* IcloudService.swift in Sources */,
@@ -1150,7 +1139,6 @@
 				BD71A85029BCFD6D00E6A86E /* AppColorCell.swift in Sources */,
 				BD71A82B29BCFB8700E6A86E /* NotificationViewModel.swift in Sources */,
 				BD71A82D29BCFB8F00E6A86E /* NotificationViewController.swift in Sources */,
-				BD71A83329BCFC0500E6A86E /* WidgetsViewModel.swift in Sources */,
 				BD71A81629BCF93B00E6A86E /* ChangeAppIconViewController.swift in Sources */,
 				BD71A84829BCFD4100E6A86E /* IcloudCell.swift in Sources */,
 				BD71A82029BCF9F100E6A86E /* AppColorViewModel.swift in Sources */,

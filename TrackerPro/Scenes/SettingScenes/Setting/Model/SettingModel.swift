@@ -28,7 +28,7 @@ enum LineType: Int {
     case statistic = 2
     case language = 3
     case subject = 4
-    case widgets = 5
+    case changeIcon = 5
     case passcode = 6
     case commands = 7
     case notification = 8
