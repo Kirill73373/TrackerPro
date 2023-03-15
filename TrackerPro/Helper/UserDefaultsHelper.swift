@@ -13,11 +13,11 @@ final class UserDefaultsHelper {
         case isPay
         case isShowOnboard
         case isOnFaceId
-        case password
         case isNotificationActive
         case isShowStickerActive
         case selectedIndex
         case selectedIndexLanguage
+        case language
     }
     
     // MARK: - Public properties
@@ -38,9 +38,9 @@ final class UserDefaultsHelper {
         set { setValue(newValue, key: .isShowStickerActive) }
     }
     
-    var password: String {
-        get { getValue(.password ) as? String ?? "" }
-        set { setValue(newValue, key: .password) }
+    var language: String {
+        get { getValue(.language ) as? String ?? "ru" }
+        set { setValue(newValue, key: .language) }
     }
     
     var selectedIndex: Int {

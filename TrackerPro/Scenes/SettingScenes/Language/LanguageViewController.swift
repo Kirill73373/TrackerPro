@@ -23,7 +23,7 @@ final class LanguageViewController: UIViewController {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
         lb.font = .systemFont(ofSize: 25, weight: .light)
-        lb.text = "Язык"
+        lb.text = "language_title".localized()
         return lb
     }()
     
@@ -113,7 +113,10 @@ extension LanguageViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         UIImpactFeedbackGenerator(style: .soft).impactOccurred(intensity: 0.7)
         let model = viewModel.items[indexPath.row]
-        UserDefaultsHelper.shared.selectedIndex = indexPath.row
+        UserDefaultsHelper.shared.selectedIndexLanguage = indexPath.row
+        Bundle.setLanguage(lang: model.lang)
+        titleLabel.text = "language_title".localized()
+        
         collectionView.reloadData()
     }
     
@@ -121,7 +124,7 @@ extension LanguageViewController: UICollectionViewDelegate, UICollectionViewData
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LanguageCell", for: indexPath) as? LanguageCell else { return UICollectionViewCell() }
         let model = viewModel.items[indexPath.row]
         cell.configure(model: model)
-        cell.selectedCell(UserDefaultsHelper.shared.selectedIndex == indexPath.row)
+        cell.selectedCell(UserDefaultsHelper.shared.selectedIndexLanguage == indexPath.row)
         return cell
     }
 }

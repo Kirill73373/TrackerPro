@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  TrackerPro
+
+  Created by Кирилл Блохин on 15.03.2023.
+  
+*/
+
+//MARK: - Language View Controller
+"language_title" = "Sprache";
+
+//MARK: - Setting View Controller
+"setting_title" = "Einstellungen";

@@ -41,6 +41,11 @@ final class SettingViewController: UIViewController {
         addConstraints()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.reloadData()
+    }
+    
     private func setupStyleView() {
         collectionView.delegate = self
         collectionView.dataSource = self

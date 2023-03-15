@@ -11,4 +11,5 @@ import UIKit
 struct LanguageModel {
     var icon: UIImage
     var title: String
+    var lang: String
 }

@@ -12,7 +12,6 @@ final class TitleCell: UICollectionViewCell {
     private let titleMyLabel: UILabel = {
         let lb = UILabel()
         lb.font = .systemFont(ofSize: 40, weight: .regular)
-        lb.text = "Настройки"
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
         return lb
     }()
@@ -25,6 +24,15 @@ final class TitleCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        activateLocalizedString()
+    }
+    
+    private func activateLocalizedString() {
+        titleMyLabel.text = "setting_title".localized()
     }
     
     private func setupCellStyle() {
