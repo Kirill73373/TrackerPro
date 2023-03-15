@@ -96,6 +96,7 @@
 		BD71A8E729C2015200E6A86E /* ReminderFrequencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8E629C2015200E6A86E /* ReminderFrequencyCell.swift */; };
 		BD71A8EA29C21B3600E6A86E /* ChangeAppIconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8E929C21B3600E6A86E /* ChangeAppIconModel.swift */; };
 		BD71A8EC29C21E0000E6A86E /* ChangeIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8EB29C21E0000E6A86E /* ChangeIconService.swift */; };
+		BD71A8F029C21F9400E6A86E /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8EF29C21F9400E6A86E /* KeychainService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +193,7 @@
 		BD71A8E629C2015200E6A86E /* ReminderFrequencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFrequencyCell.swift; sourceTree = "<group>"; };
 		BD71A8E929C21B3600E6A86E /* ChangeAppIconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconModel.swift; sourceTree = "<group>"; };
 		BD71A8EB29C21E0000E6A86E /* ChangeIconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeIconService.swift; sourceTree = "<group>"; };
+		BD71A8EF29C21F9400E6A86E /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -662,14 +664,15 @@
 			isa = PBXGroup;
 			children = (
 				BD71A8ED29C21E0300E6A86E /* ChangeIconService */,
-				BD71A8D929C0F7B400E6A86E /* NetworkService */,
 				BD71A8D629C0F4E800E6A86E /* AnaliticService */,
 				BD71A8D029C0B5F500E6A86E /* SupportService */,
 				BD71A8CD29C0B4E100E6A86E /* ReviewService */,
-				BD71A86B29BD013E00E6A86E /* IcloudService */,
 				BD71A87529BD154F00E6A86E /* StoreKitService */,
-				BD71A86A29BD012500E6A86E /* CoreDataService */,
+				BD71A8D929C0F7B400E6A86E /* NetworkService */,
 				BD71A86C29BD015500E6A86E /* NotificationService */,
+				BD71A86B29BD013E00E6A86E /* IcloudService */,
+				BD71A86A29BD012500E6A86E /* CoreDataService */,
+				BD71A8EE29C21F6500E6A86E /* KeychainService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -953,6 +956,14 @@
 			path = ChangeIconService;
 			sourceTree = "<group>";
 		};
+		BD71A8EE29C21F6500E6A86E /* KeychainService */ = {
+			isa = PBXGroup;
+			children = (
+				BD71A8EF29C21F9400E6A86E /* KeychainService.swift */,
+			);
+			path = KeychainService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1123,6 +1134,7 @@
 				BD71A7FC29BCF8AC00E6A86E /* OnboardViewModel.swift in Sources */,
 				BD71A81029BCF90E00E6A86E /* PrivacyPoliceViewModel.swift in Sources */,
 				BD71A81A29BCF96600E6A86E /* ChangeAppIconViewModel.swift in Sources */,
+				BD71A8F029C21F9400E6A86E /* KeychainService.swift in Sources */,
 				BD71A7F829BCF89600E6A86E /* LaunchViewController.swift in Sources */,
 				BD71A84429BCFD2B00E6A86E /* PaywallCell.swift in Sources */,
 				BD71A8BD29BF573500E6A86E /* LineCell.swift in Sources */,
