@@ -1,6 +1,6 @@
 # TrackerPro
 
-Стэк проекта:
+# Стэк:
 - UIKit
 - SnapKit
 - CoreData
@@ -13,3 +13,4 @@
 - Alamofire
 - Kingfisher
 - YandexMobileMetrica
+- CloudKit

@@ -14,6 +14,8 @@ final class UserDefaultsHelper {
         case isShowOnboard
         case isOnFaceId
         case password
+        case isNotificationActive
+        case isShowStickerActive
     }
     
     // MARK: - Public properties
@@ -22,6 +24,16 @@ final class UserDefaultsHelper {
     var isPay: Bool {
         get { getValue(.isPay ) as? Bool ?? false }
         set { setValue(newValue, key: .isPay) }
+    }
+    
+    var isNotificationActive: Bool {
+        get { getValue(.isNotificationActive ) as? Bool ?? false }
+        set { setValue(newValue, key: .isNotificationActive) }
+    }
+    
+    var isShowStickerActive: Bool {
+        get { getValue(.isShowStickerActive ) as? Bool ?? false }
+        set { setValue(newValue, key: .isShowStickerActive) }
     }
     
     var password: String {

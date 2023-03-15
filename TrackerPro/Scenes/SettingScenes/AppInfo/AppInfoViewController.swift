@@ -27,6 +27,8 @@ final class AppInfoViewController: UIViewController {
         return lb
     }()
     
+    private let containerOneView = ContainerView()
+    
     private let iconAppImageView: UIImageView = {
         let img = UIImageView()
         img.contentMode = .scaleAspectFit
@@ -96,6 +98,10 @@ final class AppInfoViewController: UIViewController {
         view.addSubviews(
             backView,
             titleLabel,
+            containerOneView
+        )
+        
+        containerOneView.addSubviews(
             iconAppImageView,
             nameAppLabel,
             buildLabel,
@@ -113,9 +119,15 @@ final class AppInfoViewController: UIViewController {
             make.centerY.equalTo(backView)
         }
         
-        iconAppImageView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().inset(20)
+        containerOneView.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(20)
             make.top.equalTo(backView.snp.bottom).inset(-40)
+            make.height.equalTo(110)
+        }
+        
+        iconAppImageView.snp.makeConstraints { make in
+            make.leading.equalToSuperview().inset(5)
+            make.centerY.equalToSuperview()
             make.size.equalTo(100)
         }
         

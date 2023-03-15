@@ -41,7 +41,7 @@
 		BD71A83729BCFC8100E6A86E /* IcloudViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A83629BCFC8100E6A86E /* IcloudViewModel.swift */; };
 		BD71A83929BCFC8800E6A86E /* IcloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A83829BCFC8800E6A86E /* IcloudViewController.swift */; };
 		BD71A84429BCFD2B00E6A86E /* PaywallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84329BCFD2B00E6A86E /* PaywallCell.swift */; };
-		BD71A84629BCFD3700E6A86E /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84529BCFD3700E6A86E /* NotificationCell.swift */; };
+		BD71A84629BCFD3700E6A86E /* AdmittanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84529BCFD3700E6A86E /* AdmittanceCell.swift */; };
 		BD71A84829BCFD4100E6A86E /* IcloudCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84729BCFD4100E6A86E /* IcloudCell.swift */; };
 		BD71A84A29BCFD4900E6A86E /* WidgetsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84929BCFD4900E6A86E /* WidgetsCell.swift */; };
 		BD71A84C29BCFD5300E6A86E /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A84B29BCFD5300E6A86E /* LanguageCell.swift */; };
@@ -93,6 +93,10 @@
 		BD71A8D529C0BE9700E6A86E /* SupportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8D429C0BE9700E6A86E /* SupportModel.swift */; };
 		BD71A8D829C0F4F400E6A86E /* AnaliticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8D729C0F4F400E6A86E /* AnaliticService.swift */; };
 		BD71A8DB29C0F7C100E6A86E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8DA29C0F7C100E6A86E /* NetworkService.swift */; };
+		BD71A8DF29C1EEB000E6A86E /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8DE29C1EEB000E6A86E /* ContainerView.swift */; };
+		BD71A8E329C1F7C000E6A86E /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8E229C1F7C000E6A86E /* SwitchView.swift */; };
+		BD71A8E529C1F86400E6A86E /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8E429C1F86400E6A86E /* NotificationModel.swift */; };
+		BD71A8E729C2015200E6A86E /* ReminderFrequencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8E629C2015200E6A86E /* ReminderFrequencyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,7 +138,7 @@
 		BD71A83629BCFC8100E6A86E /* IcloudViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcloudViewModel.swift; sourceTree = "<group>"; };
 		BD71A83829BCFC8800E6A86E /* IcloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcloudViewController.swift; sourceTree = "<group>"; };
 		BD71A84329BCFD2B00E6A86E /* PaywallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallCell.swift; sourceTree = "<group>"; };
-		BD71A84529BCFD3700E6A86E /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		BD71A84529BCFD3700E6A86E /* AdmittanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmittanceCell.swift; sourceTree = "<group>"; };
 		BD71A84729BCFD4100E6A86E /* IcloudCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcloudCell.swift; sourceTree = "<group>"; };
 		BD71A84929BCFD4900E6A86E /* WidgetsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsCell.swift; sourceTree = "<group>"; };
 		BD71A84B29BCFD5300E6A86E /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
@@ -186,6 +190,10 @@
 		BD71A8D429C0BE9700E6A86E /* SupportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportModel.swift; sourceTree = "<group>"; };
 		BD71A8D729C0F4F400E6A86E /* AnaliticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticService.swift; sourceTree = "<group>"; };
 		BD71A8DA29C0F7C100E6A86E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BD71A8DE29C1EEB000E6A86E /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		BD71A8E229C1F7C000E6A86E /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
+		BD71A8E429C1F86400E6A86E /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		BD71A8E629C2015200E6A86E /* ReminderFrequencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFrequencyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,8 +284,10 @@
 		BD71A7E329BCF71700E6A86E /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				BD71A8DC29C1EE9800E6A86E /* View */,
 				BD71A88129BD4D8D00E6A86E /* Page */,
 				BD71A87E29BD3B3A00E6A86E /* Button */,
+				BD71A8E129C1F7B500E6A86E /* Switch */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -481,16 +491,16 @@
 			children = (
 				BD71A7E829BCF78D00E6A86E /* Setting */,
 				BD71A7ED29BCF7CD00E6A86E /* Paywall */,
-				BD71A82829BCFB6C00E6A86E /* Notification */,
 				BD71A83429BCFC6C00E6A86E /* Icloud */,
 				BD71A82E29BCFBE000E6A86E /* Widgets */,
 				BD71A82229BCFA5400E6A86E /* Language */,
 				BD71A81729BCF94700E6A86E /* ChangeAppIcon */,
 				BD71A81B29BCF9C800E6A86E /* AppColor */,
-				BD71A7F029BCF7FB00E6A86E /* PrivacyPolice */,
-				BD71A7EF29BCF7E700E6A86E /* TermsOfUse */,
+				BD71A82829BCFB6C00E6A86E /* Notification */,
 				BD71A7F129BCF80700E6A86E /* Support */,
 				BD71A8C229BF8F7200E6A86E /* AppInfo */,
+				BD71A7F029BCF7FB00E6A86E /* PrivacyPolice */,
+				BD71A7EF29BCF7E700E6A86E /* TermsOfUse */,
 			);
 			path = SettingScenes;
 			sourceTree = "<group>";
@@ -518,6 +528,7 @@
 			children = (
 				BD71A82C29BCFB8F00E6A86E /* NotificationViewController.swift */,
 				BD71A83B29BCFCDF00E6A86E /* Cell */,
+				BD71A8E029C1F78400E6A86E /* Model */,
 				BD71A82929BCFB7E00E6A86E /* ViewModel */,
 			);
 			path = Notification;
@@ -578,7 +589,8 @@
 		BD71A83B29BCFCDF00E6A86E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				BD71A84529BCFD3700E6A86E /* NotificationCell.swift */,
+				BD71A84529BCFD3700E6A86E /* AdmittanceCell.swift */,
+				BD71A8E629C2015200E6A86E /* ReminderFrequencyCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -928,6 +940,30 @@
 			path = NetworkService;
 			sourceTree = "<group>";
 		};
+		BD71A8DC29C1EE9800E6A86E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD71A8DE29C1EEB000E6A86E /* ContainerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD71A8E029C1F78400E6A86E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD71A8E429C1F86400E6A86E /* NotificationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD71A8E129C1F7B500E6A86E /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				BD71A8E229C1F7C000E6A86E /* SwitchView.swift */,
+			);
+			path = Switch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1065,6 +1101,7 @@
 				BD71A7CE29BCF61500E6A86E /* AppDelegate.swift in Sources */,
 				BD71A7D029BCF61500E6A86E /* SceneDelegate.swift in Sources */,
 				BD71A7F629BCF88500E6A86E /* LaunchViewModel.swift in Sources */,
+				BD71A8E329C1F7C000E6A86E /* SwitchView.swift in Sources */,
 				BD71A87029BD0BAE00E6A86E /* Animation.swift in Sources */,
 				BD71A80029BCF8BF00E6A86E /* AuthorizationViewController.swift in Sources */,
 				BD71A80E29BCF90500E6A86E /* PrivacyPoliceViewController.swift in Sources */,
@@ -1102,12 +1139,13 @@
 				BD71A8BD29BF573500E6A86E /* LineCell.swift in Sources */,
 				BD71A81429BCF92200E6A86E /* SupportViewModel.swift in Sources */,
 				BD71A8BB29BF572600E6A86E /* PayCell.swift in Sources */,
+				BD71A8E729C2015200E6A86E /* ReminderFrequencyCell.swift in Sources */,
 				BD71A8AB29BE516E00E6A86E /* MainViewModel.swift in Sources */,
 				BD71A83729BCFC8100E6A86E /* IcloudViewModel.swift in Sources */,
 				BD71A89029BE2BEA00E6A86E /* UserDefaultsHelper.swift in Sources */,
 				BD71A86429BD00F500E6A86E /* ColorHelper.swift in Sources */,
 				BD71A85729BCFDA100E6A86E /* TermsOfUseCell.swift in Sources */,
-				BD71A84629BCFD3700E6A86E /* NotificationCell.swift in Sources */,
+				BD71A84629BCFD3700E6A86E /* AdmittanceCell.swift in Sources */,
 				BD71A87B29BD156900E6A86E /* CoreDataService.swift in Sources */,
 				BD71A85029BCFD6D00E6A86E /* AppColorCell.swift in Sources */,
 				BD71A82B29BCFB8700E6A86E /* NotificationViewModel.swift in Sources */,
@@ -1119,10 +1157,12 @@
 				BD71A83929BCFC8800E6A86E /* IcloudViewController.swift in Sources */,
 				BD71A89F29BE38E900E6A86E /* BlurEffectView.swift in Sources */,
 				BD71A85A29BCFDB900E6A86E /* OtherCell.swift in Sources */,
+				BD71A8DF29C1EEB000E6A86E /* ContainerView.swift in Sources */,
 				BD71A84C29BCFD5300E6A86E /* LanguageCell.swift in Sources */,
 				BD71A8CF29C0B4EE00E6A86E /* ReviewService.swift in Sources */,
 				BD71A80829BCF8E900E6A86E /* PaywallViewModel.swift in Sources */,
 				BD71A8B629BE74EE00E6A86E /* TopMainView.swift in Sources */,
+				BD71A8E529C1F86400E6A86E /* NotificationModel.swift in Sources */,
 				BD71A8C729BF8F9400E6A86E /* AppInfoViewModel.swift in Sources */,
 				BD71A8B929BF550F00E6A86E /* SettingModel.swift in Sources */,
 			);

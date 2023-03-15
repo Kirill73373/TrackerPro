@@ -14,5 +14,10 @@ final class NotificationViewModel {
     }
     
     var flow: ((Flow) -> Void)?
+    
+    private(set) var items: [NotificationModel] = [
+        NotificationModel(type: .admittance),
+        NotificationModel(type: .reminderFrequency)
+    ]
 }
 

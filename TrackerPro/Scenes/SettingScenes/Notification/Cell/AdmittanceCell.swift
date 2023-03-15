@@ -1,5 +1,5 @@
 //
-//  SupportCell.swift
+//  NotificationCell.swift
 //  TrackerPro
 //
 //  Created by Кирилл Блохин on 11.03.2023.
@@ -7,24 +7,19 @@
 
 import UIKit
 
-final class SupportCell: UICollectionViewCell {
+final class AdmittanceCell: UICollectionViewCell {
     
     private let containerOneView = ContainerView()
-    
-    private let iconImageView: UIImageView = {
-        let img = UIImageView()
-        img.contentMode = .scaleAspectFit
-        img.cornerType(type: .all, radius: 10)
-        img.clipsToBounds = true
-        return img
-    }()
     
     private let titleLabel: UILabel = {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
-        lb.font = .systemFont(ofSize: 20, weight: .light)
+        lb.font = .systemFont(ofSize: 18, weight: .light)
+        lb.text = "Допуск уведомлений"
         return lb
     }()
+    
+    private let switchView = SwitchView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,9 +31,9 @@ final class SupportCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(model: SupportModel) {
-        titleLabel.text = model.title
-        iconImageView.image = model.icon
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        switchView.toogleSwitch(isActive: UserDefaultsHelper.shared.isNotificationActive)
     }
     
     private func setupCellStyle() {
@@ -51,8 +46,8 @@ final class SupportCell: UICollectionViewCell {
         )
         
         containerOneView.addSubviews(
-            iconImageView,
-            titleLabel
+            titleLabel,
+            switchView
         )
         
         containerOneView.snp.makeConstraints { make in
@@ -60,14 +55,15 @@ final class SupportCell: UICollectionViewCell {
             make.top.bottom.equalToSuperview()
         }
         
-        iconImageView.snp.makeConstraints { make in
-            make.leading.centerY.equalToSuperview()
-            make.size.equalTo(80)
+        titleLabel.snp.makeConstraints { make in
+            make.leading.equalToSuperview().inset(15)
+            make.centerY.equalToSuperview()
         }
         
-        titleLabel.snp.makeConstraints { make in
+        switchView.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().inset(15)
             make.centerY.equalToSuperview()
-            make.leading.equalTo(iconImageView.snp.trailing).inset(-15)
+            make.size.equalTo(CGSize(width: 51, height: 30))
         }
     }
 }
