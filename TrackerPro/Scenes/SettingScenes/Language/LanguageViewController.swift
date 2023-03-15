@@ -27,6 +27,21 @@ final class LanguageViewController: UIViewController {
         return lb
     }()
     
+    private var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 10
+        layout.minimumInteritemSpacing = 10
+        layout.scrollDirection = .vertical
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collection.registerCells(LanguageCell.self)
+        collection.backgroundColor = .clear
+        collection.showsHorizontalScrollIndicator = false
+        collection.showsVerticalScrollIndicator = false
+        collection.contentInsetAdjustmentBehavior = .never
+        collection.contentInset = UIEdgeInsets(top: 40, left: 0, bottom: 40, right: 0)
+        return collection
+    }()
+    
     private let viewModel: LanguageViewModel
     
     init(viewModel: LanguageViewModel) {
@@ -53,6 +68,8 @@ final class LanguageViewController: UIViewController {
     }
     
     private func setupStyleView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
         view.backgroundColor = ColorHelper.bgColor
         navigationController?.navigationBar.isHidden = true
     }
@@ -60,7 +77,8 @@ final class LanguageViewController: UIViewController {
     private func addConstraints() {
         view.addSubviews(
             backView,
-            titleLabel
+            titleLabel,
+            collectionView
         )
         
         backView.snp.makeConstraints { make in
@@ -73,5 +91,37 @@ final class LanguageViewController: UIViewController {
             make.centerX.equalToSuperview()
             make.centerY.equalTo(backView)
         }
+        
+        collectionView.snp.makeConstraints { make in
+            make.top.equalTo(backView.snp.bottom)
+            make.leading.trailing.bottom.equalToSuperview()
+        }
+    }
+}
+
+extension LanguageViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = collectionView.frame.size
+        return CGSize(width: size.width, height: 60)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.items.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        UIImpactFeedbackGenerator(style: .soft).impactOccurred(intensity: 0.7)
+        let model = viewModel.items[indexPath.row]
+        UserDefaultsHelper.shared.selectedIndex = indexPath.row
+        collectionView.reloadData()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LanguageCell", for: indexPath) as? LanguageCell else { return UICollectionViewCell() }
+        let model = viewModel.items[indexPath.row]
+        cell.configure(model: model)
+        cell.selectedCell(UserDefaultsHelper.shared.selectedIndex == indexPath.row)
+        return cell
     }
 }

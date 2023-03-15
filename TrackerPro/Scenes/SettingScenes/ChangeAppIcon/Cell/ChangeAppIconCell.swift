@@ -26,6 +26,13 @@ final class ChangeAppIconCell: UICollectionViewCell {
         return lb
     }()
     
+    private let selectedView: UIImageView = {
+        let img = UIImageView()
+        img.contentMode = .scaleAspectFit
+        img.image = ImageHelper.selectedIcon
+        return img
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupCellStyle()
@@ -41,6 +48,10 @@ final class ChangeAppIconCell: UICollectionViewCell {
         iconImageView.image = model.icon
     }
     
+    func selectedCell(_ isSelected: Bool) {
+        selectedView.alpha = isSelected ? 1 : 0
+    }
+    
     private func setupCellStyle() {
         backgroundColor = .clear
     }
@@ -52,11 +63,17 @@ final class ChangeAppIconCell: UICollectionViewCell {
         
         containerOneView.addSubviews(
             iconImageView,
-            titleLabel
+            titleLabel,
+            selectedView
         )
         
         containerOneView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
+        }
+        
+        selectedView.snp.makeConstraints { make in
+            make.trailing.top.equalToSuperview().inset(7)
+            make.size.equalTo(32)
         }
         
         iconImageView.snp.makeConstraints { make in

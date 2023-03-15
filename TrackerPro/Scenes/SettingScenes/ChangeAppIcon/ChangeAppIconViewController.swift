@@ -113,12 +113,15 @@ extension ChangeAppIconViewController: UICollectionViewDelegate, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         UIImpactFeedbackGenerator(style: .soft).impactOccurred(intensity: 0.7)
         let model = viewModel.items[indexPath.row]
-        ChangeIconService.setIcon(model.title)
+        ChangeIconService.setIcon(model.title.lowercased())
+        UserDefaultsHelper.shared.selectedIndex = indexPath.row
+        collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChangeAppIconCell", for: indexPath) as? ChangeAppIconCell else { return UICollectionViewCell() }
         let model = viewModel.items[indexPath.row]
+        cell.selectedCell(UserDefaultsHelper.shared.selectedIndex == indexPath.row)
         cell.configure(model: model)
         return cell
     }

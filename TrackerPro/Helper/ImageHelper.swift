@@ -47,7 +47,27 @@ enum ImageHelper {
     static var backIcon: UIImage = UIImage(named: "backIcon") ?? UIImage()
     static var nextIcon: UIImage = UIImage(named: "nextIcon") ?? UIImage()
     static var backOtherIcon: UIImage = UIImage(named: "backOtherIcon") ?? UIImage()
+    static var selectedIcon: UIImage = UIImage(named: "selectedIcon") ?? UIImage()
     
+    //MARK: - Country
+    
+    static var belarusIcon: UIImage = UIImage(named: "belarusIcon") ?? UIImage()
+    static var chinaIcon: UIImage = UIImage(named: "chinaIcon") ?? UIImage()
+    static var englandIcon: UIImage = UIImage(named: "englandIcon") ?? UIImage()
+    static var germanyIcon: UIImage = UIImage(named: "germanyIcon") ?? UIImage()
+    static var japanIcon: UIImage = UIImage(named: "japanIcon") ?? UIImage()
+    static var russiaIcon: UIImage = UIImage(named: "russiaIcon") ?? UIImage()
+    static var serbiyaIcon: UIImage = UIImage(named: "serbiyaIcon") ?? UIImage()
+    static var ukreinIcon: UIImage = UIImage(named: "ukreinIcon") ?? UIImage()
+    
+    //MARK: - Icon
+    
+    static var black: UIImage = UIImage(named: "black") ?? UIImage()
+    static var blue: UIImage = UIImage(named: "blue") ?? UIImage()
+    static var gold: UIImage = UIImage(named: "gold") ?? UIImage()
+    static var green: UIImage = UIImage(named: "green") ?? UIImage()
+    static var purple: UIImage = UIImage(named: "purple") ?? UIImage()
+    static var red: UIImage = UIImage(named: "red") ?? UIImage()
 }
 
 

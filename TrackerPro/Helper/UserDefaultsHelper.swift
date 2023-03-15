@@ -16,6 +16,8 @@ final class UserDefaultsHelper {
         case password
         case isNotificationActive
         case isShowStickerActive
+        case selectedIndex
+        case selectedIndexLanguage
     }
     
     // MARK: - Public properties
@@ -39,6 +41,16 @@ final class UserDefaultsHelper {
     var password: String {
         get { getValue(.password ) as? String ?? "" }
         set { setValue(newValue, key: .password) }
+    }
+    
+    var selectedIndex: Int {
+        get { getValue(.selectedIndex ) as? Int ?? 0 }
+        set { setValue(newValue, key: .selectedIndex) }
+    }
+    
+    var selectedIndexLanguage: Int {
+        get { getValue(.selectedIndexLanguage ) as? Int ?? 0 }
+        set { setValue(newValue, key: .selectedIndexLanguage) }
     }
     
     var isOnFaceId: Bool {
