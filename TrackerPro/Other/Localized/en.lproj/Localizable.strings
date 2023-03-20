@@ -11,3 +11,14 @@
 
 //MARK: - Setting View Controller
 "setting_title" = "Settings";
+
+//MARK: - Onboard View Controller
+"one_title_onboard" = "Cost Accounting";
+"two_title_onboard" = "Revenue Accounting";
+"three_title_onboard" = "Access To Icloud";
+"four_title_onboard" = "Section Of Debts";
+
+"one_subTitle_onboard" = "Control your spending in our app";
+"two_subTitle_onboard" = "Control your income in our application";
+"three_subTitle_onboard" = "Synchronize your data with your other devices";
+"four_subTitle_onboard" = "Our application has a section of debts";

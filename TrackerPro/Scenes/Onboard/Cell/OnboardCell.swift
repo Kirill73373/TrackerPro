@@ -67,6 +67,7 @@ final class OnboardCell: UICollectionViewCell {
         titleTextLabel.snp.makeConstraints { make in
             make.centerX.equalTo(animationView)
             make.bottom.equalTo(animationView.snp.top).inset(-20)
+            make.leading.trailing.equalToSuperview().inset(70)
         }
         
         animationView.snp.makeConstraints { make in
@@ -77,7 +78,7 @@ final class OnboardCell: UICollectionViewCell {
         textLabel.snp.makeConstraints { make in
             make.centerX.equalTo(animationView)
             make.top.equalTo(animationView.snp.bottom).inset(-20)
-            make.width.equalTo(300)
+            make.leading.trailing.equalToSuperview().inset(70)
         }
     }
 }

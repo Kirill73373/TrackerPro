@@ -11,3 +11,14 @@
 
 //MARK: - Setting View Controller
 "setting_title" = "設定";
+
+//MARK: - Onboard View Controller
+"one_title_onboard" = "原価計算";
+"two_title_onboard" = "収益会計";
+"three_title_onboard" = "Icloudへのアクセス";
+"four_title_onboard" = "債務のセクション";
+
+"one_subTitle_onboard" = "アプリで支出を管理";
+"two_subTitle_onboard" = "私たちのアプリケーションであなたの収入を管理してください";
+"three_subTitle_onboard" = "データを他のデバイスと同期する";
+"four_subTitle_onboard" = "私たちのアプリケーションには債務のセクションがあります";

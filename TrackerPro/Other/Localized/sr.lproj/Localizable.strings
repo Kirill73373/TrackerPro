@@ -11,3 +11,14 @@
 
 //MARK: - Setting View Controller
 "setting_title" = "Подешавања";
+
+//MARK: - Onboard View Controller
+"one_title_onboard" = "Евиденција трошкова \nпроизводње";
+"two_title_onboard" = "Рачуноводство прихода";
+"three_title_onboard" = "Приступ Icloud";
+"four_title_onboard" = "Одељак за дугове";
+
+"one_subTitle_onboard" = "Контролишите своју потрошњу у нашој апликацији";
+"two_subTitle_onboard" = "Контролишите своје приходе у нашој апликацији";
+"three_subTitle_onboard" = "Синхронизујте своје податке са другим уређајима";
+"four_subTitle_onboard" = "Наша апликација има део дугова";

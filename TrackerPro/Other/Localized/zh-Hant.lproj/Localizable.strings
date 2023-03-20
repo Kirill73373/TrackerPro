@@ -11,3 +11,14 @@
 
 //MARK: - Setting View Controller
 "setting_title" = "设置";
+
+//MARK: - Onboard View Controller
+"one_title_onboard" = "成本会计";
+"two_title_onboard" = "收入核算";
+"three_title_onboard" = "访问 iCloud";
+"four_title_onboard" = "债务部分";
+
+"one_subTitle_onboard" = "在我们的应用程序中控制您的支出";
+"two_subTitle_onboard" = "在我们的应用程序中控制您的收入";
+"three_subTitle_onboard" = "将您的数据与其他设备同步";
+"four_subTitle_onboard" = "我们的应用程序有一段债务";

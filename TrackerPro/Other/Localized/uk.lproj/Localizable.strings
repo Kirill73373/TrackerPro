@@ -11,3 +11,14 @@
 
 //MARK: - Setting View Controller
 "setting_title" = "Налаштування";
+
+//MARK: - Onboard View Controller
+"one_title_onboard" = "Облік витрат";
+"two_title_onboard" = "Облік доходів";
+"three_title_onboard" = "Доступ до Icloud";
+"four_title_onboard" = "Розділ боргів";
+
+"one_subTitle_onboard" = "Контролюйте свої витрати в нашому додатку";
+"two_subTitle_onboard" = "Контролюйте свої доходи в нашому додатку";
+"three_subTitle_onboard" = "Синхронізуйте дані з іншими пристроями";
+"four_subTitle_onboard" = "У нашому додатку є розділ боргів";

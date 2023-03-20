@@ -18,10 +18,10 @@ final class OnboardViewModel {
     var flow: ((Flow) -> Void)?
     
     private(set) var items: [OnboardModel] = [
-        .init(animationName: "myPetsAnimation", title: "Cost Accounting", subTitle: "Control your spending \nin our app"),
-        .init(animationName: "myPetsAnimation", title: "Revenue Accounting", subTitle: "Control your income in \nour application"),
-        .init(animationName: "myPetsAnimation", title: "Access To Icloud", subTitle: "Synchronize your data \nwith your other \ndevices"),
-        .init(animationName: "myPetsAnimation", title: "Section Of Debts", subTitle: "Our application has a \nsection of debts")
+        .init(animationName: "myPetsAnimation", title: "one_title_onboard".localized(), subTitle: "one_subTitle_onboard".localized()),
+        .init(animationName: "myPetsAnimation", title: "two_title_onboard".localized(), subTitle: "two_subTitle_onboard".localized()),
+        .init(animationName: "myPetsAnimation", title: "three_title_onboard".localized(), subTitle: "three_subTitle_onboard".localized()),
+        .init(animationName: "myPetsAnimation", title: "four_title_onboard".localized(), subTitle: "four_subTitle_onboard".localized())
     ]
     
     func scrollToItem(isLeft: Bool, isTouch: Bool, complition: () -> Void) {
