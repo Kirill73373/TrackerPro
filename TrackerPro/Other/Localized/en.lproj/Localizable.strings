@@ -6,11 +6,43 @@
   
 */
 
+//MARK: - Notification View Controller
+"notification_title" = "Notifications";
+
+"notification_tolerance" = "Notification tolerance";
+"notification_sticker" = "Icon sticker:";
+"notification_show_sticker" = "Show sticker";
+
+//MARK: - Change Icons View Controller
+"change_icon_title" = "Icon change";
+
+"change_icon_color_green" = "Green";
+"change_icon_color_blue" = "Blue";
+"change_icon_color_purple" = "Purple";
+"change_icon_color_red" = "Red";
+"change_icon_color_gold" = "Golden";
+"change_icon_color_black" = "Black";
+
 //MARK: - Language View Controller
 "language_title" = "Language";
 
 //MARK: - Setting View Controller
 "setting_title" = "Settings";
+
+"setting_cell_exchange_rates" = "Exchange Rates";
+"setting_cell_statistic" = "Statistics";
+
+"setting_cell_language" = "Language";
+"setting_cell_subject" = "Subject";
+"setting_cell_changeIcon" = "Icon change";
+
+"setting_cell_passcode" = "Password";
+"setting_cell_commands" = "Teams";
+"setting_cell_notification" = "Notifications";
+
+"setting_cell_review" = "Leave feedback";
+"setting_cell_support" = "Support";
+"setting_cell_indo_app" = "About the application";
 
 //MARK: - Onboard View Controller
 "one_title_onboard" = "Cost Accounting";

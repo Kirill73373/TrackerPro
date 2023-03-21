@@ -6,11 +6,43 @@
   
 */
 
+//MARK: - Notification View Controller
+"notification_title" = "Уведомления";
+
+"notification_tolerance" = "Допуск уведомлений";
+"notification_sticker" = "Наклейка на иконке:";
+"notification_show_sticker" = "Показать наклейку";
+
+//MARK: - Change Icons View Controller
+"change_icon_title" = "Смена иконки";
+
+"change_icon_color_green" = "Зеленая";
+"change_icon_color_blue" = "Синяя";
+"change_icon_color_purple" = "Фиолетовая";
+"change_icon_color_red" = "Красная";
+"change_icon_color_gold" = "Золотая";
+"change_icon_color_black" = "Черная";
+
 //MARK: - Language View Controller
 "language_title" = "Язык";
 
 //MARK: - Setting View Controller
 "setting_title" = "Настройки";
+
+"setting_cell_exchange_rates" = "Курс валют";
+"setting_cell_statistic" = "Статистика";
+
+"setting_cell_language" = "Язык";
+"setting_cell_subject" = "Тема";
+"setting_cell_changeIcon" = "Смена иконки";
+
+"setting_cell_passcode" = "Пароль";
+"setting_cell_commands" = "Команды";
+"setting_cell_notification" = "Уведомления";
+
+"setting_cell_review" = "Оставить отзыв";
+"setting_cell_support" = "Поддержка";
+"setting_cell_indo_app" = "О приложении";
 
 //MARK: - Onboard View Controller
 "one_title_onboard" = "Учет затрат";

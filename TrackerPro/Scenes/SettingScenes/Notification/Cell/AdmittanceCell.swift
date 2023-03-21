@@ -15,7 +15,7 @@ final class AdmittanceCell: UICollectionViewCell {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
         lb.font = .systemFont(ofSize: 18, weight: .light)
-        lb.text = "Допуск уведомлений"
+        lb.text = "notification_tolerance".localized()
         return lb
     }()
     

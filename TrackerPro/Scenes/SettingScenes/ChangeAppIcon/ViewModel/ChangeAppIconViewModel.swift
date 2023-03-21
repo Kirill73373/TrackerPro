@@ -16,12 +16,12 @@ final class ChangeAppIconViewModel {
     var flow: ((Flow) -> Void)?
     
     private(set) var items: [ChangeAppIconModel] = [
-        ChangeAppIconModel(icon: ImageHelper.green, title: "Green"),
-        ChangeAppIconModel(icon: ImageHelper.blue, title: "Blue"),
-        ChangeAppIconModel(icon: ImageHelper.purple, title: "Purple"),
-        ChangeAppIconModel(icon: ImageHelper.red, title: "Red"),
-        ChangeAppIconModel(icon: ImageHelper.gold, title: "Gold"),
-        ChangeAppIconModel(icon: ImageHelper.black, title: "Black")
+        ChangeAppIconModel(icon: ImageHelper.green, title: "change_icon_color_green"),
+        ChangeAppIconModel(icon: ImageHelper.blue, title: "change_icon_color_blue"),
+        ChangeAppIconModel(icon: ImageHelper.purple, title: "change_icon_color_purple"),
+        ChangeAppIconModel(icon: ImageHelper.red, title: "change_icon_color_red"),
+        ChangeAppIconModel(icon: ImageHelper.gold, title: "change_icon_color_gold"),
+        ChangeAppIconModel(icon: ImageHelper.black, title: "change_icon_color_black")
     ]
 }
 

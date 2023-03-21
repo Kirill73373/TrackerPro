@@ -44,7 +44,7 @@ final class ChangeAppIconCell: UICollectionViewCell {
     }
     
     func configure(model: ChangeAppIconModel) {
-        titleLabel.text = model.title
+        titleLabel.text = model.title.localized()
         iconImageView.image = model.icon
     }
     

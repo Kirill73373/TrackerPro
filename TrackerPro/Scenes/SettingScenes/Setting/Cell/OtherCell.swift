@@ -52,7 +52,7 @@ final class OtherCell: UICollectionViewCell {
     
     func configure(model: SettingModel) {
         iconImageView.image = model.image?.withTintColor(ColorHelper.blackColor.withAlphaComponent(0.4))
-        titleMyLabel.text = model.title
+        titleMyLabel.text = model.title?.localized()
     }
     
     private func setupCellStyle() {

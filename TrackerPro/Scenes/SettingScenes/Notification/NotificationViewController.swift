@@ -23,7 +23,7 @@ final class NotificationViewController: UIViewController {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
         lb.font = .systemFont(ofSize: 25, weight: .light)
-        lb.text = "Уведомления"
+        lb.text = "notification_title".localized()
         return lb
     }()
     

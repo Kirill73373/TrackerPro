@@ -116,7 +116,6 @@ extension LanguageViewController: UICollectionViewDelegate, UICollectionViewData
         UserDefaultsHelper.shared.selectedIndexLanguage = indexPath.row
         Bundle.setLanguage(lang: model.lang)
         titleLabel.text = "language_title".localized()
-        
         collectionView.reloadData()
     }
     

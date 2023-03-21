@@ -19,6 +19,7 @@ extension String {
 }
 
 extension Bundle {
+
     private static var bundle: Bundle?
     
     public static func localizedBundle() -> Bundle {
@@ -27,7 +28,6 @@ extension Bundle {
             let path = Bundle.main.path(forResource: appLang, ofType: "lproj")
             bundle = Bundle(path: path ?? "")
         }
-        
         return bundle ?? Bundle()
     }
     

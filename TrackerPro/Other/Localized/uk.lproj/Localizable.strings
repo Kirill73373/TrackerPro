@@ -6,11 +6,43 @@
   
 */
 
+//MARK: - Notification View Controller
+"notification_title" = "Повідомлення";
+
+"notification_tolerance" = "Допуск повідомлень";
+"notification_sticker" = "Наклейка на значок:";
+"notification_show_sticker" = "Показати наклейку";
+
+//MARK: - Change Icons View Controller
+"change_icon_title" = "Зміна іконки";
+
+"change_icon_color_green" = "Зелена";
+"change_icon_color_blue" = "Синя";
+"change_icon_color_purple" = "Фіолетова";
+"change_icon_color_red" = "Червона";
+"change_icon_color_gold" = "Золота";
+"change_icon_color_black" = "Чорна";
+
 //MARK: - Language View Controller
 "language_title" = "Мова";
 
 //MARK: - Setting View Controller
 "setting_title" = "Налаштування";
+
+"setting_cell_exchange_rates" = "Курс валют";
+"setting_cell_statistic" = "Статистика";
+
+"setting_cell_language" = "Мова";
+"setting_cell_subject" = "Тема";
+"setting_cell_changeIcon" = "Зміна іконки";
+
+"setting_cell_passcode" = "Пароль";
+"setting_cell_commands" = "Команди";
+"setting_cell_notification" = "Повідомлення";
+
+"setting_cell_review" = "Залишити відгук";
+"setting_cell_support" = "Підтримка";
+"setting_cell_indo_app" = "Про додаток";
 
 //MARK: - Onboard View Controller
 "one_title_onboard" = "Облік витрат";

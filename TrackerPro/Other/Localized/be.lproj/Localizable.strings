@@ -6,11 +6,43 @@
   
 */
 
+//MARK: - Notification View Controller
+"notification_title" = "Апавяшчэнні";
+
+"notification_tolerance" = "Допуск апавяшчэнняў";
+"notification_sticker" = "Налепка на абразку:";
+"notification_show_sticker" = "Паказаць налепку";
+
+//MARK: - Change Icons View Controller
+"change_icon_title" = "Змена абразкі";
+
+"change_icon_color_green" = "Зялёная";
+"change_icon_color_blue" = "Сіняя";
+"change_icon_color_purple" = "Фіялетавая";
+"change_icon_color_red" = "Чырвоная";
+"change_icon_color_gold" = "Залатая";
+"change_icon_color_black" = "Чорная";
+
 //MARK: - Language View Controller
 "language_title" = "Мова";
 
 //MARK: - Setting View Controller
 "setting_title" = "Налады";
+
+"setting_cell_exchange_rates" = "Курс валют";
+"setting_cell_statistic" = "Статыстыка";
+
+"setting_cell_language" = "Мова";
+"setting_cell_subject" = "Тэма";
+"setting_cell_changeIcon" = "Змена абразкі";
+
+"setting_cell_passcode" = "Пароль";
+"setting_cell_commands" = "Каманды";
+"setting_cell_notification" = "Апавяшчэнні";
+
+"setting_cell_review" = "Пакінуць водгук";
+"setting_cell_support" = "Падтрымка";
+"setting_cell_indo_app" = "Аб дадатку";
 
 //MARK: - Onboard View Controller
 "one_title_onboard" = "Улік выдаткаў";

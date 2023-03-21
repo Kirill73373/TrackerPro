@@ -6,11 +6,43 @@
   
 */
 
+//MARK: - Notification View Controller
+"notification_title" = "Benachrichtigungen";
+
+"notification_tolerance" = "Benachrichtigungstoleranz";
+"notification_sticker" = "Icon-Aufkleber:";
+"notification_show_sticker" = "Aufkleber zeigen";
+
+//MARK: - Change Icons View Controller
+"change_icon_title" = "Symbolwechsel";
+
+"change_icon_color_green" = "Grün";
+"change_icon_color_blue" = "Blau";
+"change_icon_color_purple" = "Lila";
+"change_icon_color_red" = "Rot";
+"change_icon_color_gold" = "Golden";
+"change_icon_color_black" = "Schwarz";
+
 //MARK: - Language View Controller
 "language_title" = "Sprache";
 
 //MARK: - Setting View Controller
 "setting_title" = "Einstellungen";
+
+"setting_cell_exchange_rates" = "Wechselkurse";
+"setting_cell_statistic" = "Statistiken";
+
+"setting_cell_language" = "Sprache";
+"setting_cell_subject" = "Thema";
+"setting_cell_changeIcon" = "Symbolwechsel";
+
+"setting_cell_passcode" = "Passwort";
+"setting_cell_commands" = "Mannschaften";
+"setting_cell_notification" = "Benachrichtigungen";
+
+"setting_cell_review" = "Hinterlasse Kommentar";
+"setting_cell_support" = "Unterstützung";
+"setting_cell_indo_app" = "Über die Anwendung";
 
 //MARK: - Onboard View Controller
 "one_title_onboard" = "Kostenrechnung";

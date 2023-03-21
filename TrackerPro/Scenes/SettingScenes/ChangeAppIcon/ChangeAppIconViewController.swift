@@ -23,7 +23,7 @@ final class ChangeAppIconViewController: UIViewController {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
         lb.font = .systemFont(ofSize: 25, weight: .light)
-        lb.text = "Смена иконки"
+        lb.text = "change_icon_title".localized()
         return lb
     }()
     

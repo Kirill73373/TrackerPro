@@ -6,11 +6,43 @@
   
 */
 
+//MARK: - Notification View Controller
+"notification_title" = "通知";
+
+"notification_tolerance" = "通知容忍度";
+"notification_sticker" = "圖標貼紙:";
+"notification_show_sticker" = "顯示貼紙";
+
+//MARK: - Change Icons View Controller
+"change_icon_title" = "圖標變化";
+
+"change_icon_color_green" = "綠色的";
+"change_icon_color_blue" = "藍色的";
+"change_icon_color_purple" = "紫色的";
+"change_icon_color_red" = "紅色的";
+"change_icon_color_gold" = "金的";
+"change_icon_color_black" = "黑色的";
+
 //MARK: - Language View Controller
 "language_title" = "语言";
 
 //MARK: - Setting View Controller
 "setting_title" = "设置";
+
+"setting_cell_exchange_rates" = "匯率";
+"setting_cell_statistic" = "統計數據";
+
+"setting_cell_language" = "語言";
+"setting_cell_subject" = "主題";
+"setting_cell_changeIcon" = "圖標變化";
+
+"setting_cell_passcode" = "密碼";
+"setting_cell_commands" = "團隊";
+"setting_cell_notification" = "通知";
+
+"setting_cell_review" = "留下反饋";
+"setting_cell_support" = "支持";
+"setting_cell_indo_app" = "關於申請";
 
 //MARK: - Onboard View Controller
 "one_title_onboard" = "成本会计";

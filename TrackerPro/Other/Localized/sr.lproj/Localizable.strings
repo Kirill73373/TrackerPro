@@ -6,11 +6,43 @@
   
 */
 
+//MARK: - Notification View Controller
+"notification_title" = "Обавештења";
+
+"notification_tolerance" = "Толеранција обавештења";
+"notification_sticker" = "Ицон стицкер:";
+"notification_show_sticker" = "Прикажи налепницу";
+
+//MARK: - Change Icons View Controller
+"change_icon_title" = "Промена иконе";
+
+"change_icon_color_green" = "Зелен";
+"change_icon_color_blue" = "Плави";
+"change_icon_color_purple" = "љубичаста";
+"change_icon_color_red" = "Црвени";
+"change_icon_color_gold" = "Златан";
+"change_icon_color_black" = "Црн";
+
 //MARK: - Language View Controller
 "language_title" = "Језик";
 
 //MARK: - Setting View Controller
 "setting_title" = "Подешавања";
+
+"setting_cell_exchange_rates" = "Девизни курс";
+"setting_cell_statistic" = "Статистика";
+
+"setting_cell_language" = "Језик";
+"setting_cell_subject" = "Предмет";
+"setting_cell_changeIcon" = "Промена иконе";
+
+"setting_cell_passcode" = "Лозинка";
+"setting_cell_commands" = "Тимови";
+"setting_cell_notification" = "Обавештења";
+
+"setting_cell_review" = "Напишите оцену";
+"setting_cell_support" = "Подршка";
+"setting_cell_indo_app" = "О апликацији";
 
 //MARK: - Onboard View Controller
 "one_title_onboard" = "Евиденција трошкова \nпроизводње";

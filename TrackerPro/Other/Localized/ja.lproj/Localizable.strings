@@ -6,11 +6,43 @@
   
 */
 
+//MARK: - Notification View Controller
+"notification_title" = "通知";
+
+"notification_tolerance" = "通知の許容範囲";
+"notification_sticker" = "アイコンステッカー:";
+"notification_show_sticker" = "ステッカーを表示";
+
+//MARK: - Change Icons View Controller
+"change_icon_title" = "アイコン変更";
+
+"change_icon_color_green" = "緑";
+"change_icon_color_blue" = "青";
+"change_icon_color_purple" = "紫";
+"change_icon_color_red" = "赤";
+"change_icon_color_gold" = "ゴールデン";
+"change_icon_color_black" = "黒";
+
 //MARK: - Language View Controller
 "language_title" = "言語";
 
 //MARK: - Setting View Controller
 "setting_title" = "設定";
+
+"setting_cell_exchange_rates" = "為替相場";
+"setting_cell_statistic" = "統計";
+
+"setting_cell_language" = "言語";
+"setting_cell_subject" = "主題";
+"setting_cell_changeIcon" = "アイコン変更";
+
+"setting_cell_passcode" = "パスワード";
+"setting_cell_commands" = "チーム";
+"setting_cell_notification" = "通知";
+
+"setting_cell_review" = "フィードバックを残す";
+"setting_cell_support" = "サポート";
+"setting_cell_indo_app" = "応募について";
 
 //MARK: - Onboard View Controller
 "one_title_onboard" = "原価計算";

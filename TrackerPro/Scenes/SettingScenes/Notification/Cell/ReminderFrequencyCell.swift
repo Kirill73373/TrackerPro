@@ -26,7 +26,7 @@ final class ReminderFrequencyCell: UICollectionViewCell {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
         lb.font = .systemFont(ofSize: 18, weight: .light)
-        lb.text = "Наклейка на иконке:"
+        lb.text = "notification_sticker".localized()
         return lb
     }()
     
@@ -34,7 +34,7 @@ final class ReminderFrequencyCell: UICollectionViewCell {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
         lb.font = .systemFont(ofSize: 18, weight: .light)
-        lb.text = "Показать наклейку"
+        lb.text = "notification_show_sticker".localized()
         return lb
     }()
     
