@@ -23,7 +23,7 @@ final class AppInfoViewController: UIViewController {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.4)
         lb.font = .systemFont(ofSize: 25, weight: .light)
-        lb.text = "О приложении"
+        lb.text = "app_info_title".localized()
         return lb
     }()
     
@@ -44,7 +44,7 @@ final class AppInfoViewController: UIViewController {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.6)
         lb.font = .systemFont(ofSize: 15, weight: .light)
-        lb.text = "Name: \(Bundle.main.appName ?? "")"
+        lb.text = "app_info_name".localized() + " \(Bundle.main.appName ?? "")"
         return lb
     }()
     
@@ -52,7 +52,7 @@ final class AppInfoViewController: UIViewController {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.6)
         lb.font = .systemFont(ofSize: 15, weight: .light)
-        lb.text = "Build: \(Bundle.main.buildVersionNumber ?? "")"
+        lb.text = "app_info_buidl".localized() + " \(Bundle.main.buildVersionNumber ?? "")"
         return lb
     }()
     
@@ -60,7 +60,7 @@ final class AppInfoViewController: UIViewController {
         let lb = UILabel()
         lb.textColor = ColorHelper.blackColor.withAlphaComponent(0.6)
         lb.font = .systemFont(ofSize: 15, weight: .light)
-        lb.text = "Version: \(Bundle.main.releaseVersionNumber ?? "")"
+        lb.text = "app_info_version".localized() + " \(Bundle.main.releaseVersionNumber ?? "")"
         return lb
     }()
     

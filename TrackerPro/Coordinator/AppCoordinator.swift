@@ -142,7 +142,7 @@ final class AppCoordinator: NSObject {
             case .showChangeIcon:
                 self.showChangeAppIconVC()
             case .showPasscode:
-                break
+                self.showPasswordSettingVC()
             case .showCommands:
                 break
             case .showNotification:
@@ -151,6 +151,23 @@ final class AppCoordinator: NSObject {
                 self.showAppInfoVC()
             case .showSupport:
                 self.showSupportVC()
+            }
+        }
+    }
+    
+    private func showPasswordSettingVC() {
+        let viewModel = PasswordSettingViewModel()
+        let viewController = PasswordSettingViewController(viewModel: viewModel)
+        bindPasswordSettingVC(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func bindPasswordSettingVC(viewModel: PasswordSettingViewModel) {
+        viewModel.flow = { [weak self] flow in
+            guard let self = self else { return }
+            switch flow {
+            case .back:
+                self.navigationController.popViewController(animated: true)
             }
         }
     }

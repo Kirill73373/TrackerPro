@@ -6,6 +6,16 @@
   
 */
 
+//MARK: - Support View Controller
+"support_title" = "Подршка";
+
+//MARK: - App Info View Controller
+"app_info_title" = "О апликацији";
+
+"app_info_name" = "Име:";
+"app_info_buidl" = "Скупштина:";
+"app_info_version" = "Верзија:";
+
 //MARK: - Notification View Controller
 "notification_title" = "Обавештења";
 

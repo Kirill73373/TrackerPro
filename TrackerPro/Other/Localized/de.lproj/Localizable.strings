@@ -6,6 +6,16 @@
   
 */
 
+//MARK: - Support View Controller
+"support_title" = "Unterstützung";
+
+//MARK: - App Info View Controller
+"app_info_title" = "Über die Anwendung";
+
+"app_info_name" = "Name:";
+"app_info_buidl" = "Montage:";
+"app_info_version" = "Ausführung:";
+
 //MARK: - Notification View Controller
 "notification_title" = "Benachrichtigungen";
 

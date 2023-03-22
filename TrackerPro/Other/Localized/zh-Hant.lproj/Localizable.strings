@@ -6,6 +6,16 @@
   
 */
 
+//MARK: - Support View Controller
+"support_title" = "支持";
+
+//MARK: - App Info View Controller
+"app_info_title" = "關於申請";
+
+"app_info_name" = "姓名:";
+"app_info_buidl" = "集會:";
+"app_info_version" = "版本:";
+
 //MARK: - Notification View Controller
 "notification_title" = "通知";
 

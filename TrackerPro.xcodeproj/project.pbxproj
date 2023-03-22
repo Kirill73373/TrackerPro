@@ -106,6 +106,14 @@
 		BD71A90029C24E1C00E6A86E /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A8FF29C24E1C00E6A86E /* LanguageModel.swift */; };
 		BD71A90229C256CD00E6A86E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71A90129C256CD00E6A86E /* String.swift */; };
 		BD71A90629C25BC800E6A86E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD71A90829C25BC800E6A86E /* Localizable.strings */; };
+		BD9BD0B629CB1280001E50F0 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BD0B529CB1280001E50F0 /* Locale.swift */; };
+		BD9BD0BD29CB1369001E50F0 /* PasswordSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BD0BC29CB1369001E50F0 /* PasswordSettingViewController.swift */; };
+		BD9BD0BF29CB1373001E50F0 /* PasswordSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BD0BE29CB1373001E50F0 /* PasswordSettingViewModel.swift */; };
+		BD9BD0C129CB1378001E50F0 /* EnablePasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BD0C029CB1378001E50F0 /* EnablePasswordCell.swift */; };
+		BD9BD0C629CB147C001E50F0 /* EnablePasswordCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BD0C529CB147C001E50F0 /* EnablePasswordCellViewModel.swift */; };
+		BD9BD0C829CB14D1001E50F0 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BD0C729CB14D1001E50F0 /* CellProtocol.swift */; };
+		BD9BD0CA29CB14E4001E50F0 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BD0C929CB14E4001E50F0 /* CellViewModelProtocol.swift */; };
+		BD9BD0CC29CB166D001E50F0 /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9BD0CB29CB166D001E50F0 /* UICollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -226,6 +234,14 @@
 		BD71A91629C25CA300E6A86E /* sr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sr; path = sr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BD71A91729C25CB600E6A86E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		BD71A91829C25CB600E6A86E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BD9BD0B529CB1280001E50F0 /* Locale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
+		BD9BD0BC29CB1369001E50F0 /* PasswordSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSettingViewController.swift; sourceTree = "<group>"; };
+		BD9BD0BE29CB1373001E50F0 /* PasswordSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSettingViewModel.swift; sourceTree = "<group>"; };
+		BD9BD0C029CB1378001E50F0 /* EnablePasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablePasswordCell.swift; sourceTree = "<group>"; };
+		BD9BD0C529CB147C001E50F0 /* EnablePasswordCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablePasswordCellViewModel.swift; sourceTree = "<group>"; };
+		BD9BD0C729CB14D1001E50F0 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		BD9BD0C929CB14E4001E50F0 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
+		BD9BD0CB29CB166D001E50F0 /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +294,7 @@
 		BD71A7CC29BCF61500E6A86E /* TrackerPro */ = {
 			isa = PBXGroup;
 			children = (
+				BD9BD0BB29CB134D001E50F0 /* Protocol */,
 				BD71A88929BE044E00E6A86E /* Other */,
 				BD71A7E329BCF71700E6A86E /* CustomViews */,
 				BD71A7E229BCF70F00E6A86E /* Helper */,
@@ -522,6 +539,7 @@
 		BD71A82129BCFA0000E6A86E /* SettingScenes */ = {
 			isa = PBXGroup;
 			children = (
+				BD9BD0B729CB12FC001E50F0 /* PasswordSetting */,
 				BD71A7E829BCF78D00E6A86E /* Setting */,
 				BD71A7ED29BCF7CD00E6A86E /* Paywall */,
 				BD71A83429BCFC6C00E6A86E /* Icloud */,
@@ -737,12 +755,14 @@
 		BD71A86E29BD0BA200E6A86E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				BD71A86F29BD0BAE00E6A86E /* Animation.swift */,
+				BD71A90129C256CD00E6A86E /* String.swift */,
+				BD9BD0B529CB1280001E50F0 /* Locale.swift */,
+				BD71A8CB29BFABDF00E6A86E /* Bundle.swift */,
 				BD71A87129BD0BD200E6A86E /* UIView.swift */,
 				BD71A87329BD106A00E6A86E /* UIColor.swift */,
+				BD71A86F29BD0BAE00E6A86E /* Animation.swift */,
 				BD71A88729BD517F00E6A86E /* UICollectionView.swift */,
-				BD71A8CB29BFABDF00E6A86E /* Bundle.swift */,
-				BD71A90129C256CD00E6A86E /* String.swift */,
+				BD9BD0CB29CB166D001E50F0 /* UICollectionViewCell.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1029,6 +1049,58 @@
 			path = Localized;
 			sourceTree = "<group>";
 		};
+		BD9BD0B729CB12FC001E50F0 /* PasswordSetting */ = {
+			isa = PBXGroup;
+			children = (
+				BD9BD0BC29CB1369001E50F0 /* PasswordSettingViewController.swift */,
+				BD9BD0BA29CB1348001E50F0 /* Cell */,
+				BD9BD0B929CB1343001E50F0 /* ViewModel */,
+			);
+			path = PasswordSetting;
+			sourceTree = "<group>";
+		};
+		BD9BD0B929CB1343001E50F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD9BD0BE29CB1373001E50F0 /* PasswordSettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD9BD0BA29CB1348001E50F0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BD9BD0C329CB1455001E50F0 /* EnablePassword */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BD9BD0BB29CB134D001E50F0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD9BD0C729CB14D1001E50F0 /* CellProtocol.swift */,
+				BD9BD0C929CB14E4001E50F0 /* CellViewModelProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD9BD0C329CB1455001E50F0 /* EnablePassword */ = {
+			isa = PBXGroup;
+			children = (
+				BD9BD0C029CB1378001E50F0 /* EnablePasswordCell.swift */,
+				BD9BD0C429CB1461001E50F0 /* ViewModel */,
+			);
+			path = EnablePassword;
+			sourceTree = "<group>";
+		};
+		BD9BD0C429CB1461001E50F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD9BD0C529CB147C001E50F0 /* EnablePasswordCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1174,6 +1246,7 @@
 				BD71A87229BD0BD200E6A86E /* UIView.swift in Sources */,
 				BD71A8DB29C0F7C100E6A86E /* NetworkService.swift in Sources */,
 				BD71A82729BCFA7800E6A86E /* LanguageViewController.swift in Sources */,
+				BD9BD0BD29CB1369001E50F0 /* PasswordSettingViewController.swift in Sources */,
 				BD71A86829BD010500E6A86E /* ImageHelper.swift in Sources */,
 				BD71A8D829C0F4F400E6A86E /* AnaliticService.swift in Sources */,
 				BD71A7FA29BCF8A200E6A86E /* OnboardViewController.swift in Sources */,
@@ -1184,6 +1257,7 @@
 				BD71A7F629BCF88500E6A86E /* LaunchViewModel.swift in Sources */,
 				BD71A8E329C1F7C000E6A86E /* SwitchView.swift in Sources */,
 				BD71A87029BD0BAE00E6A86E /* Animation.swift in Sources */,
+				BD9BD0BF29CB1373001E50F0 /* PasswordSettingViewModel.swift in Sources */,
 				BD71A8EC29C21E0000E6A86E /* ChangeIconService.swift in Sources */,
 				BD71A80029BCF8BF00E6A86E /* AuthorizationViewController.swift in Sources */,
 				BD71A80E29BCF90500E6A86E /* PrivacyPoliceViewController.swift in Sources */,
@@ -1196,11 +1270,14 @@
 				BD71A88829BD517F00E6A86E /* UICollectionView.swift in Sources */,
 				BD71A8A929BE515A00E6A86E /* MainViewController.swift in Sources */,
 				BD71A87D29BD156F00E6A86E /* NotificationService.swift in Sources */,
+				BD9BD0CC29CB166D001E50F0 /* UICollectionViewCell.swift in Sources */,
 				BD71A80C29BCF8FB00E6A86E /* TermsOfUseViewModel.swift in Sources */,
 				BD71A8EA29C21B3600E6A86E /* ChangeAppIconModel.swift in Sources */,
+				BD9BD0C629CB147C001E50F0 /* EnablePasswordCellViewModel.swift in Sources */,
 				BD71A85229BCFD7A00E6A86E /* PrivacyPoliceCell.swift in Sources */,
 				BD71A85D29BCFDCC00E6A86E /* OnboardCell.swift in Sources */,
 				BD71A87729BD155F00E6A86E /* IcloudService.swift in Sources */,
+				BD9BD0C129CB1378001E50F0 /* EnablePasswordCell.swift in Sources */,
 				BD71A84E29BCFD6000E6A86E /* ChangeAppIconCell.swift in Sources */,
 				BD71A80229BCF8CC00E6A86E /* SettingViewController.swift in Sources */,
 				BD71A86029BCFDDA00E6A86E /* OnboardModel.swift in Sources */,
@@ -1213,6 +1290,7 @@
 				BD71A87929BD156400E6A86E /* StoreKitService.swift in Sources */,
 				BD71A80629BCF8E100E6A86E /* PaywallViewController.swift in Sources */,
 				BD71A7FC29BCF8AC00E6A86E /* OnboardViewModel.swift in Sources */,
+				BD9BD0B629CB1280001E50F0 /* Locale.swift in Sources */,
 				BD71A81029BCF90E00E6A86E /* PrivacyPoliceViewModel.swift in Sources */,
 				BD71A81A29BCF96600E6A86E /* ChangeAppIconViewModel.swift in Sources */,
 				BD71A8F029C21F9400E6A86E /* KeychainService.swift in Sources */,
@@ -1230,6 +1308,7 @@
 				BD71A84629BCFD3700E6A86E /* AdmittanceCell.swift in Sources */,
 				BD71A87B29BD156900E6A86E /* CoreDataService.swift in Sources */,
 				BD71A85029BCFD6D00E6A86E /* AppColorCell.swift in Sources */,
+				BD9BD0C829CB14D1001E50F0 /* CellProtocol.swift in Sources */,
 				BD71A82B29BCFB8700E6A86E /* NotificationViewModel.swift in Sources */,
 				BD71A82D29BCFB8F00E6A86E /* NotificationViewController.swift in Sources */,
 				BD71A81629BCF93B00E6A86E /* ChangeAppIconViewController.swift in Sources */,
@@ -1242,6 +1321,7 @@
 				BD71A84C29BCFD5300E6A86E /* LanguageCell.swift in Sources */,
 				BD71A8CF29C0B4EE00E6A86E /* ReviewService.swift in Sources */,
 				BD71A80829BCF8E900E6A86E /* PaywallViewModel.swift in Sources */,
+				BD9BD0CA29CB14E4001E50F0 /* CellViewModelProtocol.swift in Sources */,
 				BD71A8B629BE74EE00E6A86E /* TopMainView.swift in Sources */,
 				BD71A8E529C1F86400E6A86E /* NotificationModel.swift in Sources */,
 				BD71A8C729BF8F9400E6A86E /* AppInfoViewModel.swift in Sources */,

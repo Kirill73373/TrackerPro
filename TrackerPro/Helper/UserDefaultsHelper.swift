@@ -39,7 +39,7 @@ final class UserDefaultsHelper {
     }
     
     var language: String {
-        get { getValue(.language ) as? String ?? "ru" }
+        get { getValue(.language ) as? String ?? Locale.language }
         set { setValue(newValue, key: .language) }
     }
     

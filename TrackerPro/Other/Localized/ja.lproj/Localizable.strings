@@ -6,6 +6,16 @@
   
 */
 
+//MARK: - Support View Controller
+"support_title" = "サポート";
+
+//MARK: - App Info View Controller
+"app_info_title" = "応募について";
+
+"app_info_name" = "名前:";
+"app_info_buidl" = "組み立て:";
+"app_info_version" = "バージョン:";
+
 //MARK: - Notification View Controller
 "notification_title" = "通知";
 
